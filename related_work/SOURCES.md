@@ -1,6 +1,6 @@
 # 论文与官方资料目录
 
-核对日期：2026-09-18。共 **19 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 4 篇提供原始下载链接）**，另登记 **15 项官方网页、代码或数据入口**。
+核对日期：2026-09-18。共 **19 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 4 篇提供原始下载链接）**，另登记 **16 项官方网页、代码或数据入口**。
 
 用户提供 PDF 保留原字节内容。上游 arXiv 可能更新版本；本库的准确存档由 [sources.json](sources.json) 中的 SHA-256、字节数与页数确定。文件名仅用于检索，不能推断它必然是上游最新修订。
 
@@ -34,6 +34,7 @@ Figure 本次检索到的关键技术材料主要为官方网页。本库保存�
 
 | 工作 / 资料 | 发布日期 | 原始入口 | 阅读卡片 |
 |---|---|---|---|
+| Gemini Robotics 2 brings whole-body intelligence to robots | 2026-07-30 | [官方来源](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) | [简洁笔记](quick_notes/10_gemini2.md) |
 | Helix: A Vision-Language-Action Model for Generalist Humanoid Control | 2025-02-20 | [官方来源](https://www.figure.ai/news/helix) | [笔记](figure/01_helix.md) |
 | Introducing Helix 02: Full-Body Autonomy | 2026-01-27 | [官方来源](https://www.figure.ai/news/helix-02) | [笔记](figure/02_helix02.md) |
 | Helix 2.5: Zero-Shot 30-Home Generalization | 2026-09-17 | [官方来源](https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization) | [笔记](figure/03_data_and_helix25.md) |

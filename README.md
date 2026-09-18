@@ -6,6 +6,8 @@
 
 ## 从这里开始
 
+- [18 篇简洁调研笔记](related_work/quick_notes/README.md)：每篇按「核心大纲 → 问题 → 方法 → 实验」阅读，先建立框架。
+- [openpi 中文代码学习：π0 与 π0.5](openpi_study/README.md)：代码树、初学者阅读顺序、逐文件说明和中文注释源码。
 - [Related work 总入口](related_work/README.md)：文献地图、重点工作与阅读顺序。
 - [统一调研 workflow](related_work/WORKFLOW.md)：以后增加论文时沿用的分析方法。
 - [三条路线的流程比较](related_work/COMPARISON.md)：模型边界、接口、训练方法、评估口径。

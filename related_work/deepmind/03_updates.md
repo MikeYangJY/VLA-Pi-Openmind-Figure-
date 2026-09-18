@@ -1,4 +1,4 @@
-# DeepMind 补充更新：部署与 ER 1.6
+# DeepMind 补充更新：部署、ER 1.6 与 GR 2
 
 核对日期：2026-09-18。这里记录与主线直接相关的官方更新，不作为穷尽所有机器人研究的目录。
 
@@ -18,8 +18,14 @@
 
 **研究连接：** 若你关心 Gemini 1.5 的 agent 架构，最值得追踪的是高层结束检测能否可靠判断“已经完成”，以及工具返回信息如何进入下一步计划。官方特别说明部分仪表读取评估启用 agentic vision，而其他评估设置不同；不同设置数字不能直接横比。
 
+## Gemini Robotics 2（2026-07-30）
+
+[官方发布](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) · [简洁调研笔记](../quick_notes/10_gemini2.md)。
+
+该系列包含高层推理与协调的 ER 2、动作模型 GR 2，以及本地适配的 On-Device 2。学习时沿着「高层计划 → 动作生成 → 平台执行」分别定位，不把不同模型的实验或访问方式合并。新本体少样本适配也应与新本体零样本迁移区分。
+
 ## 访问状态的边界
 
-本次检查的 [Gemini Robotics 1.5 模型页面](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/) 将动作模型列为 private preview / partners。ER 的开发者访问不等于原 VLA 权重、训练数据或完整机器人系统开放。
+旗舰动作模型的合作伙伴访问与 ER 的开发者访问是不同权限。应以 [模型页面](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/) 和对应版本发布页为准；能够访问 ER 不等于原 VLA 权重、训练数据或完整机器人系统开放。
 
 这些是文档核查结果；本库未申请 tester、调用付费 API 或验证账号实际可用权限。

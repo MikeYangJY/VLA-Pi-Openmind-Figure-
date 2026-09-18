@@ -2,6 +2,8 @@
 
 核对日期：2026-09-18。适合已经仔细读过 π0、π0.5、π0.7，开始深入 Gemini Robotics 与 Helix 的读者。
 
+**先看框架：** [18 篇简洁调研笔记](quick_notes/README.md)，每篇统一为核心大纲、问题、方法、实验。下面的阅读卡片保留更多机制与证据细节。代码学习另见 [openpi：只学 π0 与 π0.5](../openpi_study/README.md)。
+
 ## 先建立六个问题
 
 1. **监督来自哪里？** 机器人示范、人类视频、网页图文、自主执行、人工纠错分别教模型什么？
@@ -25,7 +27,7 @@
 | PI 缺失环节 | [Hi Robot、RTC、human-to-robot、RLT](pi/08_supporting_work.md) | 把版本之间的机制补齐 |
 | DeepMind 起点 | [Gemini Robotics](deepmind/01_gemini_robotics.md) | ER 与 VLA 各自负责什么 |
 | DeepMind 核心 | [Gemini Robotics 1.5](deepmind/02_gemini_robotics_15.md) | ER orchestrator、Thinking VLA、Motion Transfer |
-| DeepMind 更新 | [On-Device 与 ER 1.6](deepmind/03_updates.md) | 部署路线与具身推理更新 |
+| DeepMind 更新 | [On-Device、ER 1.6 与 GR 2](deepmind/03_updates.md) | 部署路线、具身推理与全身控制更新 |
 | Figure 起点 | [Helix](figure/01_helix.md) | latent 接口与异步双系统 |
 | Figure 全身控制 | [Helix 02](figure/02_helix02.md) | S2 → S1 → S0 的频率与输出边界 |
 | Figure 最新进展 | [Go-Big、Index、Helix 2.5](figure/03_data_and_helix25.md) | 人类数据预训练与新家庭泛化 |

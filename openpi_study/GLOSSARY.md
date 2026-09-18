@@ -1,0 +1,32 @@
+# 随用随查的术语
+
+| 词 | 在本项目中的含义 |
+|---|---|
+| observation | 当前传感器/状态与指令的集合 |
+| policy | 给定观测产生动作的策略；代码中还包含前后处理包装 |
+| tensor / array | 带多个轴的数字表；shape决定各轴含义 |
+| batch | 同时处理的一组样本；B是样本数 |
+| token | 序列中的一个位置，可以表示文本、图像patch、state或一个动作时刻 |
+| embedding | 把离散编号或原始数值映射成模型内部的特征向量 |
+| prefix / suffix | 条件token段 / 动作专家相关token段，具体组成由模型分支决定 |
+| action chunk | 一次预测的多步未来动作序列 |
+| action horizon | 动作块包含多少控制时刻 |
+| flow time | 从数据与噪声插值的位置；不是机器人运行时钟 |
+| flow matching | 学习动作分布上的向量场，推理沿该场把噪声变成动作 |
+| MSE | 预测与目标的平方误差平均 |
+| attention | 每个query根据与key的匹配，对value内容加权汇集 |
+| mask | 控制哪些数据有效，或哪些token彼此可见 |
+| KV cache | 缓存已经算好的key/value，避免重复计算不变前缀 |
+| RMSNorm / AdaRMS | 均方根归一化 / 用条件调制的归一化 |
+| PyTree | 字典、列表、对象等形成的数组嵌套结构 |
+| JIT | 将函数编译成更高效的数值执行程序 |
+| gradient | loss对参数的变化方向；优化器据此更新权重 |
+| LoRA | 用低秩矩阵表示参数更新，减少可训练参数 |
+| EMA | 模型参数的指数滑动平均 |
+| checkpoint | 磁盘上的参数/训练状态存档 |
+| gradient checkpointing | 为省显存而在反传时重算部分激活；不是磁盘存档 |
+| DDP / FSDP | 不同的多设备训练策略；具体支持和实现依后端而定 |
+| LeRobot / RLDS | 数据组织/读取体系，不是π模型结构 |
+| episode | 一次任务尝试及其时间序列 |
+| rollout | 用策略在环境中执行得到的轨迹 |
+| normalization | 按数据统计缩放数值，逆变换后才能恢复对应物理动作尺度 |

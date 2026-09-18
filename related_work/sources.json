@@ -468,5 +468,16 @@
     "origin": "official_web",
     "accessed": "2026-09-18",
     "archive_policy": "Original research notes and source link; no standalone PDF located/required for this entry."
+  },
+  {
+    "id": "gemini_robotics_2",
+    "title": "Gemini Robotics 2 brings whole-body intelligence to robots",
+    "published": "2026-07-30",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "note": "quick_notes/10_gemini2.md",
+    "kind": "official_web_document",
+    "origin": "official_web",
+    "accessed": "2026-09-18",
+    "archive_policy": "Original research notes and official source link; not presented as an independently reviewed paper."
   }
 ]

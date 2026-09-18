@@ -1,0 +1,15 @@
+# `packages/openpi-client/pyproject.toml` 中文阅读说明
+
+**定位：** 辅助文件。
+
+上游路径packages/openpi-client/pyproject.toml的配套资料。
+
+**建议读法：** 保留原始内容，通过代码树定位它与模型运行的关系。
+
+**易错点：** 格式敏感文件、文档和许可原样保存；中文说明放在本页，避免破坏原格式。
+
+[注释源码](../../../code/packages/openpi-client/pyproject.toml) · [上游固定版本](https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/packages/openpi-client/pyproject.toml)
+
+## 配置怎么影响执行
+
+配置只在被相应工具读取时生效。先定位调用它的入口，再核对路径、版本、资源与开关；不要把安装/容器参数当成模型学习出的参数。
