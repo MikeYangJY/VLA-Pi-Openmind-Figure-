@@ -2,7 +2,22 @@
 
 **从“机器人怎么学会做事”，走到“能看懂论文、代码，并问清专家”。** 覆盖 Physical Intelligence（PI）、Google DeepMind 和 Figure；代码只学习 **π0、π0.5**。
 
-## 按这六步读
+## 第一次读，先从这里开始
+
+**[零基础入门：从“看见杯子”到“把杯子放进柜子”](related_work/00_START_HERE.md)**
+
+先记一条线：**看见环境和听懂指令 → 决定当前做什么 → 生成动作数字 → 控制器执行 → 再看结果。** 各家的差别在于怎样分工，以及用什么数据把这些能力教出来。
+
+| 你会遇到的名字 | 先这样理解 |
+|---|---|
+| PI的 **action expert** | 专门生成动作的模型模块 |
+| **flow matching** | 教模型把随机数字逐步变成动作的方法；随机数字不会先被机器人执行 |
+| Gemini的 **ER** | 理解真实场景、安排步骤、检查进度的具身推理模型 |
+| Helix的 **S2 / S1 / S0** | 理解意图 / 产生运动目标 / 协调全身和平衡；S0在Helix 02中加入 |
+
+入门页按 **基本分工 → 训练是什么 → PI → Gemini → Figure → 数据差异** 讲解，每个主要模型都有“核心结构＋训练数据”的白话对照。先读它，再看下面的论文、对比和代码。具体依据及未公开边界均列在[入门正文](related_work/00_START_HERE.md)。
+
+## 入门之后，按这六步深入
 
 | 顺序 | 点这里 | 看完要能回答 |
 |---|---|---|
@@ -13,7 +28,7 @@
 | ⑤ 跟一次代码 | [openpi：只学π0与π0.5](openpi_study/README.md) | 一条观测如何变成动作？一次训练更新在哪里发生？ |
 | ⑥ 准备访谈 | [从公开证据到专家问题](related_work/INTERVIEW_PREP.md) | 已知什么、还缺什么，如何追问到可核对的答案？ |
 
-**按你目前的基础：** π0、π0.5、π0.7已经精读，可以快速扫①②，然后从[Figure学习入口](related_work/figure/README.md)开始；需要补机制时回④。完整安排及每一步的自测见[学习路线](related_work/LEARNING_PATH.md)。
+即使已经读过π0、π0.5、π0.7，也可以先用入门页重新串起术语。理解分工后，从[Figure学习入口](related_work/figure/README.md)继续；需要补机制时回④。完整安排及每一步的自测见[学习路线](related_work/LEARNING_PATH.md)。
 
 ## 带着问题来，直接查
 
@@ -25,8 +40,9 @@
 ## 文件分工
 
 ```text
-README.md                 只负责带你选入口
+README.md                 白话速览与阅读入口
 related_work/             学习路线、对比、机制与访谈准备
+  00_START_HERE.md        零基础：架构、训练与数据差异
   quick_notes/           每项工作先读这一页
   figure/ deepmind/ pi/   分公司精读笔记，各有阅读入口
   papers/                原始PDF，按笔记需要回查
@@ -35,6 +51,6 @@ openpi_study/             π0 / π0.5代码学习
   file_notes/            每个文件的说明，通过FILE_INDEX查找
 ```
 
-本库区分**论文报告、官方披露、学习解释、未披露项**。结构整理日期：2026-09-19；技术事实以各篇注明的资料版本为准。仓库名保留Openmind，本文的Gemini Robotics均指 **Google DeepMind**。
+本库区分**论文报告、官方披露、学习解释、未披露项**。入门更新日期：2026-09-20；技术事实以各篇注明的资料版本为准。仓库名保留Openmind，本文的Gemini Robotics均指 **Google DeepMind**。
 
 [资料索引](related_work/README.md) · [更新记录](related_work/CHANGELOG.md)

@@ -1,11 +1,12 @@
 # 资料索引：按用途找内容
 
-**第一次来：** [回首页按六步学习](../README.md)。**已有具体问题：** [按问题查找](FIND_BY_QUESTION.md)。这里是分类入口，完整文件列表见[内容目录](CONTENTS.md)。
+**第一次来：** [先读零基础入门](00_START_HERE.md)，再[回首页按六步深入](../README.md)。**已有具体问题：** [按问题查找](FIND_BY_QUESTION.md)。这里是分类入口，完整文件列表见[内容目录](CONTENTS.md)。
 
 ## 学习与比较
 
 | 入口 | 用途 |
 |---|---|
+| [零基础入门](00_START_HERE.md) | 不用公式理解action expert、flow matching、ER、S2/S1/S0和各模型训练数据 |
 | [系统总览](00_OVERVIEW.md) | 用一个任务分清训练、推理、控制与评估 |
 | [学习路线](LEARNING_PATH.md) | 全库统一顺序，以及你的下一轮学习安排 |
 | [八模型对照](MODEL_COMPARISON_8.md) · [CSV](data/model_comparison_8.csv) | 架构、数据类型/规模、泛化、速度/时长、问题与不足 |

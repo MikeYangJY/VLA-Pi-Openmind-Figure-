@@ -1,6 +1,6 @@
 # 学习路线：按六步走，每步只带走一个结果
 
-这是全库统一的阅读顺序。起点是你已经仔细读过π0、π0.5、π0.7，初步了解Gemini，希望补Figure、核心训练机制和代码。**当前目标是理解并能调研/访谈；实验复现放在后面选做。**
+这是全库统一的阅读顺序。即使已经读过论文，如果action expert、flow matching、ER等术语仍然混乱，先读[零基础入门](00_START_HERE.md)，把“模块、训练方法、数据”分开。**当前目标是理解并能调研/访谈；实验复现放在后面选做。**
 
 ## 主线
 
@@ -15,7 +15,7 @@
 
 ## 你下一次学习直接这样开始
 
-1. 快速扫[系统图](00_OVERVIEW.md)与[八模型表](MODEL_COMPARISON_8.md)，重点看Figure三层控制与数据来源。
+1. 先读[零基础入门](00_START_HERE.md)并回答末尾四个问题，再扫[系统图](00_OVERVIEW.md)。[八模型表](MODEL_COMPARISON_8.md)留到需要查具体数字时。
 2. 进入[Figure路线](figure/README.md)：Helix → Helix 02 → Index → Helix 2.5。先理解架构，再理解为什么扩展数据。
 3. 带着同样问题读[DeepMind路线](deepmind/README.md)：谁规划、谁生成动作、跨机器人迁移怎么证明。
 4. 回[PI路线](pi/README.md)补KI、RECAP、MEM及世界模型；已熟悉的π0/π0.5/π0.7只需回查。
