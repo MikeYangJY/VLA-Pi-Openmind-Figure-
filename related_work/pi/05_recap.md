@@ -2,6 +2,8 @@
 
 **阅读优先级：高。** [原论文](../papers/pi/pi06_star.pdf) · [arXiv](https://arxiv.org/abs/2511.14759)。重点依据 Sections III–V、Figures 1/3/4、Algorithm 1。
 
+**新增详细对照：** [π0.6、π0.6*、π0.6-MEM 的结构、训练、数据与实验区别](09_pi06_family.md)。π0.6* 包含离线 RL 预训练及后续任务训练阶段，不能只理解成最后一次专项 RL 微调。
+
 ## 先区分三个名称
 
 - **π0.6**：基础 VLA；原文说明它从 π0.5 演进，使用 Gemma 3 4B、扩大至 860M 的 action expert 和更新的数据。

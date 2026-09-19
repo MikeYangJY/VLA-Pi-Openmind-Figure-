@@ -6,6 +6,7 @@
 
 ## 从这里开始
 
+- **2026-09-19 学习专题：** [π0.6 / π0.6* / MEM 的区别](related_work/pi/09_pi06_family.md) → [从零理解 action expert 与 flow matching](openpi_study/07_FLOW_MATCHING_FROM_ZERO.md) → [与 π0.7 世界模型的训练、数据对照](related_work/pi/10_pi07_world_model_vs_action_expert.md)。含逐步公式、手算例子、同一轨迹拆成不同训练样本的表格。
 - [18 篇简洁调研笔记](related_work/quick_notes/README.md)：每篇按「核心大纲 → 问题 → 方法 → 实验」阅读，先建立框架。
 - [openpi 中文代码学习：π0 与 π0.5](openpi_study/README.md)：代码树、初学者阅读顺序、逐文件说明和中文注释源码。
 - [Related work 总入口](related_work/README.md)：文献地图、重点工作与阅读顺序。

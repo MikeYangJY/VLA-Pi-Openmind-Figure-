@@ -479,5 +479,40 @@
     "origin": "official_web",
     "accessed": "2026-09-18",
     "archive_policy": "Original research notes and official source link; not presented as an independently reviewed paper."
+  },
+  {
+    "id": "pi06_model_card",
+    "title": "π0.6 Model Card",
+    "published": "2025-11-17",
+    "year": 2025,
+    "url": "https://website.pi-asset.com/pi06star/PI06_model_card.pdf",
+    "kind": "official_model_card",
+    "origin": "official_link",
+    "accessed": "2026-09-19",
+    "note": "pi/09_pi06_family.md",
+    "archive_policy": "Official link and original summary only; no additional PDF redistributed."
+  },
+  {
+    "id": "flow_matching",
+    "title": "Flow Matching for Generative Modeling",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2210.02747",
+    "download_url": "https://arxiv.org/pdf/2210.02747",
+    "kind": "paper",
+    "origin": "official_link",
+    "accessed": "2026-09-19",
+    "note": "../openpi_study/07_FLOW_MATCHING_FROM_ZERO.md",
+    "archive_policy": "Original tutorial and source link; no PDF copied."
+  },
+  {
+    "id": "bagel_flow_code",
+    "title": "BAGEL official image-generation flow implementation",
+    "url": "https://github.com/ByteDance-Seed/Bagel/blob/a2fa77dd8caeefc41e6607ae0ec17408d3f4ee9f/modeling/bagel/bagel.py",
+    "commit": "a2fa77dd8caeefc41e6607ae0ec17408d3f4ee9f",
+    "kind": "official_code_reference",
+    "origin": "official_repository",
+    "accessed": "2026-09-19",
+    "note": "pi/10_pi07_world_model_vs_action_expert.md",
+    "archive_policy": "Pinned code link to verify latent interpolation and MSE target; does not stand for a released PI world-model implementation."
   }
 ]

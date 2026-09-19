@@ -1,6 +1,6 @@
 # 论文与官方资料目录
 
-核对日期：2026-09-18。共 **19 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 4 篇提供原始下载链接）**，另登记 **16 项官方网页、代码或数据入口**。
+原资料核对日期：2026-09-18；本次专题补充日期：2026-09-19。共 **20 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 5 篇提供原始链接）**，另登记 **18 项官方网页、模型卡、代码或数据入口**。
 
 用户提供 PDF 保留原字节内容。上游 arXiv 可能更新版本；本库的准确存档由 [sources.json](sources.json) 中的 SHA-256、字节数与页数确定。文件名仅用于检索，不能推断它必然是上游最新修订。
 
@@ -8,6 +8,7 @@
 
 | ID | 正式标题 | 年份 | 获取方式 | PDF / 页数 | 笔记 |
 |---|---|---:|---|---|---|
+| flow_matching | [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) | 2022 | 官方链接 | [原始 PDF](https://arxiv.org/pdf/2210.02747) / 链接收录 | [零基础教程](../openpi_study/07_FLOW_MATCHING_FROM_ZERO.md) |
 | pi0 | [π0: A Vision-Language-Action Flow Model for General Robot Control](https://arxiv.org/abs/2410.24164) | 2024 | 用户提供 | [PDF](papers/pi/pi0.pdf) / 17 | [阅读卡片](pi/01_pi0.md) |
 | pi05 | [π0.5: a Vision-Language-Action Model with Open-World Generalization](https://arxiv.org/abs/2504.16054) | 2025 | 用户提供 | [PDF](papers/pi/pi05.pdf) / 19 | [阅读卡片](pi/03_pi05.md) |
 | pi07 | [π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](https://arxiv.org/abs/2604.15483) | 2026 | 用户提供 | [PDF](papers/pi/pi07.pdf) / 25 | [阅读卡片](pi/07_pi07.md) |
@@ -34,6 +35,8 @@ Figure 本次检索到的关键技术材料主要为官方网页。本库保存�
 
 | 工作 / 资料 | 发布日期 | 原始入口 | 阅读卡片 |
 |---|---|---|---|
+| π0.6 Model Card | 2025-11-17 | [官方模型卡](https://website.pi-asset.com/pi06star/PI06_model_card.pdf) | [家族区别](pi/09_pi06_family.md) |
+| BAGEL 图像 flow 实现（固定 commit） | 2026-09-19 核查 | [官方代码](https://github.com/ByteDance-Seed/Bagel/blob/a2fa77dd8caeefc41e6607ae0ec17408d3f4ee9f/modeling/bagel/bagel.py) | [世界模型对照](pi/10_pi07_world_model_vs_action_expert.md) |
 | Gemini Robotics 2 brings whole-body intelligence to robots | 2026-07-30 | [官方来源](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) | [简洁笔记](quick_notes/10_gemini2.md) |
 | Helix: A Vision-Language-Action Model for Generalist Humanoid Control | 2025-02-20 | [官方来源](https://www.figure.ai/news/helix) | [笔记](figure/01_helix.md) |
 | Introducing Helix 02: Full-Body Autonomy | 2026-01-27 | [官方来源](https://www.figure.ai/news/helix-02) | [笔记](figure/02_helix02.md) |

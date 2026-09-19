@@ -17,6 +17,8 @@
 
 ## 第二轮：理解模型如何学习
 
+先读 [flow matching 零基础教程](07_FLOW_MATCHING_FROM_ZERO.md)，弄清一条动作样本如何变成带噪输入和监督目标，再进代码。
+
 读[π0逐步讲解](03_PI0_WALKTHROUGH.md)，顺序是：`compute_loss` → `embed_prefix` → `embed_suffix` → `make_attn_mask`。再看[train.py](code/scripts/train.py)里的`train_step`，把“计算误差”和“更新参数”接上。
 
 此时只需认识三种张量：图片、语言token、动作块。先写shape，再看公式，遇到JAX语法查下面表格。

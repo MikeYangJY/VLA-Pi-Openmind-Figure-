@@ -2,6 +2,8 @@
 
 主文件：[pi0.py](code/src/openpi/models/pi0.py)。本节的数字采用代码默认配置，具体checkpoint/平台可以覆盖它们。
 
+需要先补直觉和训练数据概念时，读 [flow matching 零基础讲解与手算](07_FLOW_MATCHING_FROM_ZERO.md)。
+
 ## 1. 从机器人字典到模型输入
 
 以LIBERO为例，原始字典包含环境图像、腕部图像、状态和prompt。`LiberoInputs`把键名统一，给缺少的相机放占位图并设置mask。随后输入归一化、文本token化，并把state/action最后一维补到模型宽度。

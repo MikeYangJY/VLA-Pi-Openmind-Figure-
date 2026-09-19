@@ -26,3 +26,5 @@
 | [RL Token](18_rlt.md) | 冻结VLA表征 + 参考动作 → 小actor-critic在线学习 |
 
 已有详细笔记、PDF与来源索引仍保留在[调研总入口](../README.md)。代码学习见[openpi学习入口](../../openpi_study/README.md)。
+
+进一步理解 PI：看 [π0.6 / π0.6* / MEM 区别](../pi/09_pi06_family.md) → [action expert 与 flow matching](../../openpi_study/07_FLOW_MATCHING_FROM_ZERO.md) → [π0.7 世界模型和数据对照](../pi/10_pi07_world_model_vs_action_expert.md)。
