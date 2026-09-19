@@ -1,5 +1,9 @@
 # 随用随查的术语
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 | 词 | 在本项目中的含义 |
 |---|---|
 | observation | 当前传感器/状态与指令的集合 |
@@ -29,4 +33,8 @@
 | LeRobot / RLDS | 数据组织/读取体系，不是π模型结构 |
 | episode | 一次任务尝试及其时间序列 |
 | rollout | 用策略在环境中执行得到的轨迹 |
-| normalization | 按数据统计缩放数值，逆变换后才能恢复对应物理动作尺度 |
+| normalization | 动作/状态可按数据统计缩放，输出需恢复物理尺度；图像另有像素范围约定，见[图像教程](../related_work/pi/11_data_quality_three_concepts.md) |
+
+<!-- reading-footer-start -->
+[接着读：访谈准备](../related_work/INTERVIEW_PREP.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

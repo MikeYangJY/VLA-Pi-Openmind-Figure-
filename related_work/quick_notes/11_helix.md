@@ -1,5 +1,9 @@
 # Helix
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [Figure入口](../figure/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** S2语义latent → S1连续动作 → 上半身控制。
 
 **来源类型：** 官方技术说明（2025-02-20） · [原始来源](https://www.figure.ai/news/helix) · [展开阅读](../figure/01_helix.md)
@@ -17,3 +21,7 @@
 演示未见物体抓取、容器操作与双机器人交接等；共享权重体现多行为支持。材料没有提供可以直接与其他厂商统一排名的完整测试协议与汇总分数，不能以演示覆盖面代替成功率。
 
 **必须保留的边界：** Hindsight标注不等于RL；S2/S1不能简单等同ER/完整VLA；200Hz不是完整语义推理频率。
+
+<!-- reading-footer-start -->
+[接着读：Helix 02](12_helix02.md) · [返回Figure入口](../figure/README.md)
+<!-- reading-footer-end -->

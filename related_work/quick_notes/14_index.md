@@ -1,5 +1,9 @@
 # Index / Project Go-Big
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [Figure入口](../figure/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 人类行为采集 → 过滤/去重/标注 → 预训练 → 机器人迁移。
 
 **来源类型：** 官方数据与技术说明 · [原始来源](https://www.figure.ai/news/introducing-index) · [展开阅读](../figure/03_data_and_helix25.md)
@@ -18,4 +22,6 @@ Index发布介绍数据供给与处理机制，本身不是完整控制实验论
 
 **必须保留的边界：** 上传小时数不等于有效训练小时；“主要数据来源”需区分采集量、采样权重、成本和能力贡献。
 
-[Project Go-Big 原始说明](https://www.figure.ai/news/project-go-big)。
+<!-- reading-footer-start -->
+[前一篇：Helix 02](12_helix02.md) · [接着读：Helix 2.5](13_helix25.md) · [返回Figure入口](../figure/README.md)
+<!-- reading-footer-end -->

@@ -1,5 +1,9 @@
 # Knowledge Insulation：把梯度路径当成设计对象
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **阅读优先级：最高。** [原论文](../papers/pi/knowledge_insulation.pdf) · [arXiv](https://arxiv.org/abs/2505.23705)。重点依据 Section 5、Equations 4–6、Section 6 消融；本地 PDF 第 6 页核对了梯度公式。
 
 ## 核心问题
@@ -53,3 +57,7 @@ backbone 继续通过文本、视觉语言任务和 FAST 动作 token 的 CE 接
 不看图重画 K/V、CE、flow 三条路径，并标明谁被更新。然后与 [Helix](../figure/01_helix.md) 对照：原始 Helix 明确让 S1 梯度经 latent 更新 S2。结构上都有大/小模块，不等于采用相同优化策略。
 
 **本库实验建议：** 在同一数据、batch 和预算下比较联合训练、KI、冻结主干；同时测控制效果和语言指令冲突任务，不能只看训练 loss。
+
+<!-- reading-footer-start -->
+[前一篇：FAST](02_fast.md) · [接着读：π0.6家族](09_pi06_family.md) · [返回PI入口](README.md)
+<!-- reading-footer-end -->

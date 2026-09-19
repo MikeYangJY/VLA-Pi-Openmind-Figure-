@@ -1,5 +1,9 @@
 # FAST / π0-FAST
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](../pi/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 连续动作块 → 时间压缩 → 离散token → 自回归学习。
 
 **来源类型：** 论文 · [原始来源](https://arxiv.org/abs/2501.09747) · [展开阅读](../pi/02_fast.md)
@@ -17,3 +21,7 @@
 比较常规逐维离散化、压缩token方案和连续动作策略，在多个机器人数据/任务上测训练效率与控制表现；论文报告部分设置训练速度最高约5倍提升。检查动作频率、token长度和训练预算是否一致。
 
 **必须保留的边界：** 训练更快不等于推理始终更快；后续方法可在训练保留FAST监督、运行用连续动作专家。
+
+<!-- reading-footer-start -->
+[前一篇：π0.5](03_pi05.md) · [接着读：KI](04_ki.md) · [返回PI入口](../pi/README.md)
+<!-- reading-footer-end -->

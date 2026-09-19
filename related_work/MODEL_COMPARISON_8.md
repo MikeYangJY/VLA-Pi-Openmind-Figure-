@@ -1,10 +1,16 @@
 # 八个模型核心对照：以 π0 为架构基准
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [横向对比入口](README.md) · [按问题查找](FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 核对日期：**2026-09-19**。覆盖用户指定的八个模型；Gemini Robotics 2、Helix 02 使用官方名称。**未披露≠没有该能力；以下数字也不是跨公司统一排行榜。**
 
 **核心大纲：架构与数据 → 已见/未见任务成功率 → 速度与时长 → 核心问题与不足 → 数字出处。**
 
 [下载完整单表 CSV](data/model_comparison_8.csv)（8个模型、全部维度、来源；可用Excel打开）。下面是同一张表的分栏视图，方便在GitHub阅读。公开资料报告的是“实际用了多少数据”，一般没有证明“至少需要多少数据”。
+
+**第一次读：** 先看第1栏架构和第3栏“核心解决的问题”，建立模型定位；再看数据、成功率和时长，最后按需要核对来源。读完进入[③ Figure路线](figure/README.md)，或返回[学习路线](LEARNING_PATH.md)。
 
 ## 阅读前的四个口径
 
@@ -83,3 +89,7 @@
 - [π0.6、π0.6*、MEM区别](pi/09_pi06_family.md) · [π0.7世界模型与动作expert的数据区别](pi/10_pi07_world_model_vs_action_expert.md)
 - [三项数据质量概念：运动学检查、多摄像头成功验证、视觉归一化](pi/11_data_quality_three_concepts.md)
 - [回到调研总入口](README.md)
+
+<!-- reading-footer-start -->
+[接着读：Figure](figure/README.md) · [返回横向对比入口](README.md)
+<!-- reading-footer-end -->

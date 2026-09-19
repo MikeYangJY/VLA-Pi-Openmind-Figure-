@@ -1,5 +1,9 @@
 # RTC / Training-time RTC
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](../pi/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 旧动作持续执行 + 新动作前缀约束 + 延迟对齐。
 
 **来源类型：** 论文两篇 · [原始来源](https://arxiv.org/abs/2506.07339) · [展开阅读](../pi/08_supporting_work.md)
@@ -18,4 +22,6 @@
 
 **必须保留的边界：** 简单缓存一个action chunk并逐步执行不是RTC；openpi的ActionChunkBroker不要据此称为RTC实现。
 
-[Training-time RTC 原论文](https://arxiv.org/abs/2512.05964)。
+<!-- reading-footer-start -->
+[接着读：机制与数据](../MECHANISMS.md) · [返回PI入口](../pi/README.md)
+<!-- reading-footer-end -->

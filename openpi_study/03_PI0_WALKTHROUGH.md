@@ -1,5 +1,9 @@
 # π0：一条观测如何变成动作
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 主文件：[pi0.py](code/src/openpi/models/pi0.py)。本节的数字采用代码默认配置，具体checkpoint/平台可以覆盖它们。
 
 需要先补直觉和训练数据概念时，读 [flow matching 零基础讲解与手算](07_FLOW_MATCHING_FROM_ZERO.md)。
@@ -80,3 +84,7 @@ JAX版先对动作坐标维取平均，返回`[B,H]`；训练脚本再取标量�
 动作输出频率、模型调用频率、积分次数、单个任务时长，应分开记录。
 
 **自测：** 如果把action_horizon从50改成25，哪一轴变化？如果num_steps从10变成5，改变的是动作步数还是积分次数？如果换成7维动作的机器人，应改平台适配还是把模型默认32理解成32个关节？
+
+<!-- reading-footer-start -->
+[接着读：数据与训练](05_TRAINING_AND_DEPLOYMENT.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

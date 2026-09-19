@@ -1,43 +1,45 @@
-# openpi 中文代码学习：只学 π0 与 π0.5
+# ⑤ openpi代码学习：只学π0与π0.5
 
-这是官方 [openpi 固定版本](https://github.com/Physical-Intelligence/openpi/tree/215abfb217dbac7d5f1273282331b9b1866c0479) 的中文学习副本。上游版本：`215abfb217dbac7d5f1273282331b9b1866c0479`，核对日期：2026-09-18。
+**目标：看懂输入怎样变成动作、训练怎样更新模型，以及π0.5改了哪里。** 第一遍从一条数据流出发，随后逐文件补全。
 
-**先读代码树，再跟一次推理，然后理解训练，最后比较π0与π0.5。第一遍不必从第一行读到最后一行。**
+## 按四轮阅读
 
-如果卡在“噪声为什么能变成动作”，先看新增的 [flow matching 零基础教程](07_FLOW_MATCHING_FROM_ZERO.md)：训练样本、五步计算、两个数字的手算、推理与真实控制周期的区别。再读 [π0.7 世界模型对照](../related_work/pi/10_pi07_world_model_vs_action_expert.md)，理解动作标签与未来图像标签的不同。源码主线仍只覆盖 π0 / π0.5。
+开始前扫一遍[代码树](01_CODE_TREE.md)。flow概念还不熟时，先看[零基础教程](07_FLOW_MATCHING_FROM_ZERO.md)；不需要先安装GPU环境才能读代码。
 
-想看数据如何变成可信训练样本，补读[运动学检查、多摄像头成功验证与视觉归一化](../related_work/pi/11_data_quality_three_concepts.md)，其中图像部分逐步对应本版本源码。
+| 轮次 | 主入口 | 对应重点 | 读完的结果 |
+|---|---|---|---|
+| 1：跟一次推理 | [初学者阅读顺序](02_START_HERE.md) | 从LIBERO样本 → Policy.infer → Observation → sample_actions → 动作块消费 | 画出一条完整输入输出链 |
+| 2：理解训练 | [π0逐步解释](03_PI0_WALKTHROUGH.md) + [数据、训练与部署](05_TRAINING_AND_DEPLOYMENT.md) | compute_loss、训练样本、归一化、train_step | 分清计算loss与更新参数 |
+| 3：比较π0.5 | [沿三个开关看差异](04_PI05_DIFF.md) | state输入、时间条件、配置差异 | 在π0路径上标出变化 |
+| 4：补工程与组件 | [训练与部署](05_TRAINING_AND_DEPLOYMENT.md) → [后端与底层组件](06_BACKENDS_AND_COMPONENTS.md) | 先选一个平台，再补JAX/PyTorch、视觉/语言模块和工程工具 | 理解依赖关系，按需要深入 |
 
-## 从这六步开始
+文件数字用于定位；按上面的阅读轮次走。第4轮可按当前需要选择，不要求先把两个后端都学完。
 
-1. [代码树：每个目录干什么](01_CODE_TREE.md)
-2. [小白阅读路线与必要语法](02_START_HERE.md)
-3. [π0：跟踪一条观测怎样变成动作](03_PI0_WALKTHROUGH.md)
-4. [π0.5：沿着pi05开关看差异](04_PI05_DIFF.md)
-5. [从数据、训练到部署的完整流程](05_TRAINING_AND_DEPLOYMENT.md)
-6. [PyTorch对照与底层模块阅读](06_BACKENDS_AND_COMPONENTS.md)
+## 文件太多时，用这三个入口
 
-## 文件在哪里
+- [代码树](01_CODE_TREE.md)：看目录分别做什么。
+- [逐文件目录](FILE_INDEX.md)：140个文件都有说明，找到具体文件后再打开注释源码。
+- [术语表](GLOSSARY.md)：遇到shape、mask、KV cache、gradient等词再查。
 
-- [code/](code/)：保留官方目录结构的源码；Python文件新增中文定位、函数说明和关键计算注释。
-- [逐文件目录](FILE_INDEX.md)：140个文件各有对应说明，含配置、测试、文档、notebook与许可。
-- [术语速查](GLOSSARY.md)：tensor、batch、token、mask、KV cache、JIT等遇到再查。
-- [版本信息](UPSTREAM.json)、[逐文件变更记录](ANNOTATION_MANIFEST.json)、[验证结果](VERIFICATION.md)。
+想先弄懂数据清洗与图像输入，补读[运动学检查、多摄像头成功验证、视觉归一化](../related_work/pi/11_data_quality_three_concepts.md)。
 
-学习主线只覆盖π0、π0.5及共用管线。为保持上游依赖结构，FAST和其他实验文件仍保留，标为“可跳过”；这不要求你学习它们。`tokenizer.py`只需先看PaligemmaTokenizer，`config.py`只看π0/π0.5相关配置。
+## 范围与版本
 
-## 源码与论文的边界
+这是[官方openpi固定版本](https://github.com/Physical-Intelligence/openpi/tree/215abfb217dbac7d5f1273282331b9b1866c0479)的中文学习副本，上游commit为`215abfb217dbac7d5f1273282331b9b1866c0479`。源码与事实按该版本解释。
 
-本版本提供π0、π0.5的连续flow动作头训练/推理。上游说明预训练权重使用过KI，但这里没有展示完整论文级异构预训练、FAST联合监督和KI训练配方。学会这份代码，不等于复现了论文全部训练流程。
+`π0.5`主要通过`Pi0Config(pi05=True)`走共享实现的不同分支。完整快照保留依赖结构；FAST、FSQ、RoboArena/Polaris等旁支按目录标记选读。本学习主线不扩展为π0.6、MEM、RECAP或π0.7的代码复现。
 
-`π0.5`也不是一份完全独立的`pi05.py`：它主要通过`Pi0Config(pi05=True)`走共享实现的不同分支。π0.6、MEM、RECAP和π0.7不作为此源码的已实现功能。
+**论文与开源实现有边界：** 本版本提供连续flow动作头训练/推理；上游说明预训练权重使用过KI，但这里没有展示完整论文级异构预训练、FAST联合监督和KI训练配方。
 
-## 使用与许可
+<details>
+<summary>准备真正运行时，再看环境、版本验证与许可</summary>
 
-代码阅读无需下载模型或安装GPU环境。真正运行需按本版本[上游README](code/README.md)检查Linux、NVIDIA GPU和依赖；本次未运行真机、未下载大模型权重或执行完整训练。
+`code/`是项目根目录。按[固定版本上游README](code/README.md)检查Linux、NVIDIA GPU与依赖；本库未运行真机或完成全量模型训练。涉及ALOHA/LIBERO的外部Git子模块需按[UPSTREAM.json](UPSTREAM.json)所记来源/commit另行准备。
 
-`code/` 是嵌在调研仓库中的源码快照，安装时应把它视作项目根目录。其内嵌 `.gitmodules` 不会自动成为父仓库的 Git 子模块；涉及 ALOHA/LIBERO 的运行环境还需按 [UPSTREAM.json](UPSTREAM.json) 记录的来源和 commit 单独准备外部项目。第一轮阅读模型无需这一步。
+[版本信息](UPSTREAM.json) · [注释变更记录](ANNOTATION_MANIFEST.json) · [验证结果](VERIFICATION.md)。91个Python文件增加中文注释；原始Python逻辑经一致性验证，其余上游文件保持原字节。
 
-原始[Apache 2.0许可](code/LICENSE)、[Gemma相关条款](code/LICENSE_GEMMA.txt)和源码版权声明完整保留。Python中的新增内容以中文学习注释标记；配置、许可等其他上游文件保持原字节。外部ALOHA/LIBERO子模块只记录来源及固定commit，未把外部项目全部纳入注释范围；见[版本记录](UPSTREAM.json)。
+[Apache 2.0许可](code/LICENSE)、[Gemma条款](code/LICENSE_GEMMA.txt)及源码版权声明保留。外部子模块记录来源与版本，未展开为本库逐文件注释范围。
 
-[返回调研资料库](../README.md) · [简洁论文笔记](../related_work/quick_notes/README.md)
+</details>
+
+**上一阶段：** [④ 机制与数据](../related_work/MECHANISMS.md) · **下一阶段：** [⑥ 访谈准备](../related_work/INTERVIEW_PREP.md) · [首页](../README.md)

@@ -1,5 +1,9 @@
 # 逐文件中文阅读目录
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 π0 / π0.5是主线。完整上游快照保留依赖结构；标为“可跳过”的分支不在本轮学习范围。所有非Python文件保留原文并在对应页解释用途。
 
 | 文件 | 定位 | 中文说明 |
@@ -144,3 +148,7 @@
 | [src/openpi/transforms.py](code/src/openpi/transforms.py) | 数据主线 | [逐段说明](file_notes/src/openpi/transforms.py.md) |
 | [src/openpi/transforms_test.py](code/src/openpi/transforms_test.py) | 验证与示例 | [逐段说明](file_notes/src/openpi/transforms_test.py.md) |
 | [uv.lock](code/uv.lock) | 依赖锁定 | [逐段说明](file_notes/uv.lock.md) |
+
+<!-- reading-footer-start -->
+[接着读：访谈准备](../related_work/INTERVIEW_PREP.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

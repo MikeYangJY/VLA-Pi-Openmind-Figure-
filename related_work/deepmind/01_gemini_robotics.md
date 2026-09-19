@@ -1,5 +1,9 @@
 # Gemini Robotics：先区分 ER 与 VLA
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [DeepMind入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 [原报告](../papers/deepmind/gemini_robotics.pdf) · [arXiv](https://arxiv.org/abs/2503.20020)。团队是 **Google DeepMind**。依据报告的 Embodied Reasoning、Gemini Robotics 和评估章节。
 
 ## 核心问题
@@ -34,3 +38,7 @@ Gemini 2.0 的多模态基础能力 → 强化/扩展具身空间与时间理解
 ## 你的阅读重点
 
 你已粗读过 Gemini，建议略读背景，直接比较“ER 可以预测一个抓取点”和“VLA 实际完成抓取”的输入输出差异。然后进入 [Gemini Robotics 1.5](02_gemini_robotics_15.md) 的 orchestrator 与 Thinking VLA 消融。
+
+<!-- reading-footer-start -->
+[接着读：Gemini Robotics 1.5](02_gemini_robotics_15.md) · [返回DeepMind入口](README.md)
+<!-- reading-footer-end -->

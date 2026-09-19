@@ -1,5 +1,9 @@
 # π*0.6 / RECAP
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](../pi/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 示范/自主经验/纠错 → 价值与优势 → 条件策略 → 再部署。
 
 **来源类型：** 论文 · [原始来源](https://arxiv.org/abs/2511.14759) · [展开阅读](../pi/05_recap.md)
@@ -17,3 +21,7 @@
 在多项真实操作任务中比较经验学习前后及相关训练变体，分别测成功率、吞吐和运行表现。部分专项策略超越示范策略的效率。13小时咖啡展示是多任务连续运行，不是一个13小时无提示任务。
 
 **必须保留的边界：** 不是直接给flow策略套PPO，也不证明单任务RL更新一定保留全部其他技能。
+
+<!-- reading-footer-start -->
+[前一篇：KI](04_ki.md) · [接着读：MEM](06_mem.md) · [返回PI入口](../pi/README.md)
+<!-- reading-footer-end -->

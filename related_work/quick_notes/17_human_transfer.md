@@ -1,5 +1,9 @@
 # Human-to-Robot Transfer
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](../pi/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 人类视频/手轨迹/语言 → 联合训练 → 机器人迁移。
 
 **来源类型：** 论文 · [原始来源](https://www.pi.website/download/human_to_robot.pdf) · [展开阅读](../pi/08_supporting_work.md)
@@ -17,3 +21,7 @@
 改变机器人预训练多样性，比较加/不加人类数据，并在目标场景测试迁移。结果支持足够机器人基础经验有助于利用人类数据，不能解释成任意视频直接替代机器人示范。
 
 **必须保留的边界：** 它是独立研究；不能据此填补π0.7未披露的数据目标、比例和全部实现细节。
+
+<!-- reading-footer-start -->
+[接着读：机制与数据](../MECHANISMS.md) · [返回PI入口](../pi/README.md)
+<!-- reading-footer-end -->

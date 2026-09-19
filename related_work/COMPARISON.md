@@ -1,5 +1,9 @@
 # 三条路线：在同一 workflow 下比较
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [横向对比入口](README.md) · [按问题查找](FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 核对日期：2026-09-18。下表是对各篇原文的结构化归纳；它不是统一 benchmark 上的排名。
 
 新增：[八模型核心对照表](MODEL_COMPARISON_8.md)，按π0基准架构、数据类型/规模、泛化成功率、速度/时长、问题与不足详细比较。此页保留workflow视角。
@@ -50,3 +54,7 @@
 本库建议以 **openpi 的数据接口和模型运行流程** 建立动手基础，以 **Gemini 的编排器消融** 学习长任务评估，以 **Helix 的系统频率划分** 检查部署假设。理由是它们分别暴露了可操作的不同层面；没有理由在硬件、预算和目标任务未知时直接选出唯一“最佳模型”。
 
 来源由上表各阅读卡片链接到原文。开放实现边界另见 [复现指南](REPRODUCTION.md)。
+
+<!-- reading-footer-start -->
+[接着读：Figure](figure/README.md) · [返回横向对比入口](README.md)
+<!-- reading-footer-end -->

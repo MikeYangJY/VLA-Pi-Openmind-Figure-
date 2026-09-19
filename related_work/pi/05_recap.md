@@ -1,5 +1,9 @@
 # π*0.6 / RECAP：怎样从部署经验改进 VLA
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **阅读优先级：高。** [原论文](../papers/pi/pi06_star.pdf) · [arXiv](https://arxiv.org/abs/2511.14759)。重点依据 Sections III–V、Figures 1/3/4、Algorithm 1。
 
 **新增详细对照：** [π0.6、π0.6*、π0.6-MEM 的结构、训练、数据与实验区别](09_pi06_family.md)。π0.6* 包含离线 RL 预训练及后续任务训练阶段，不能只理解成最后一次专项 RL 微调。
@@ -51,3 +55,7 @@ $$
 [π0.7](07_pi07.md) 会利用先前策略的经验数据与质量 metadata 蒸馏能力；[RLT](08_supporting_work.md) 则缩小在线更新模块。两者回答的成本问题不同。
 
 **本库分析：** 可切入的研究问题是价值误差如何污染优势条件，以及人工纠错在何种状态最有信息量。实验需把新增交互量记入成本，不能只对比最终分数。
+
+<!-- reading-footer-start -->
+[前一篇：π0.6家族](09_pi06_family.md) · [接着读：MEM](06_mem.md) · [返回PI入口](README.md)
+<!-- reading-footer-end -->

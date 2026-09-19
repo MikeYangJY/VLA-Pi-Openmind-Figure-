@@ -1,6 +1,12 @@
 # 小白应该先看哪里，再看哪里
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 目标不是背文件名，而是能回答四句话：输入是什么、输出是什么、训练为什么能学会、π0.5改了哪里。
+
+先扫[代码树](01_CODE_TREE.md)，再按下面四轮走；完整顺序与[代码学习入口](README.md)一致。
 
 ## 第一轮：只跟一次推理
 
@@ -19,7 +25,7 @@
 
 先读 [flow matching 零基础教程](07_FLOW_MATCHING_FROM_ZERO.md)，弄清一条动作样本如何变成带噪输入和监督目标，再进代码。
 
-读[π0逐步讲解](03_PI0_WALKTHROUGH.md)，顺序是：`compute_loss` → `embed_prefix` → `embed_suffix` → `make_attn_mask`。再看[train.py](code/scripts/train.py)里的`train_step`，把“计算误差”和“更新参数”接上。
+读[π0逐步讲解](03_PI0_WALKTHROUGH.md)，顺序是：`compute_loss` → `embed_prefix` → `embed_suffix` → `make_attn_mask`。再结合[数据、训练与部署](05_TRAINING_AND_DEPLOYMENT.md)看[train.py](code/scripts/train.py)里的`train_step`，把“计算误差”和“更新参数”接上。
 
 此时只需认识三种张量：图片、语言token、动作块。先写shape，再看公式，遇到JAX语法查下面表格。
 
@@ -60,3 +66,7 @@
 5. 它属于训练、推理还是环境执行？
 
 卡住时先看该文件顶部中文说明，再点[逐文件目录](FILE_INDEX.md)中的函数定位。第一轮可以跳过FAST、FSQ、RoboArena/Polaris配置，以及与所选机器人无关的真机脚本。
+
+<!-- reading-footer-start -->
+[接着读：π0模型解释](03_PI0_WALKTHROUGH.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

@@ -1,5 +1,9 @@
 # 两个计算后端与底层组件怎样读
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 ## JAX和PyTorch对照
 
 | 逻辑 | JAX | PyTorch |
@@ -35,3 +39,7 @@
 - [sharding.py](code/src/openpi/training/sharding.py)：读懂单次训练更新后，再看参数与batch分布到设备的方式。
 - [download.py](code/src/openpi/shared/download.py)：需要排查权重缓存时再读。
 - [测试文件](FILE_INDEX.md)：遇到一个小函数不明白，先找它的test输入和断言，常比继续追底层库更直观。
+
+<!-- reading-footer-start -->
+[接着读：访谈准备](../related_work/INTERVIEW_PREP.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

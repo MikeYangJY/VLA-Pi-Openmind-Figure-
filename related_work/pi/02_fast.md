@@ -1,5 +1,9 @@
 # FAST：动作表示决定 VLA 学起来是否高效
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **阅读优先级：高。** [原论文](../papers/pi/fast.pdf) · [arXiv](https://arxiv.org/abs/2501.09747) · [官方 tokenizer](https://huggingface.co/physical-intelligence/fast)。依据 Sections IV–VI、Figure 4、Algorithm 1。
 
 ## 核心问题
@@ -41,3 +45,7 @@ VLM 学习图像/语言条件下动作 token 的交叉熵目标。FAST+ 是跨�
 [π0.5](03_pi05.md) 与 [KI](04_knowledge_insulation.md) 利用离散动作监督改善表征学习，再让连续 expert 承担部署动作输出。“离散训练监督”和“连续推理输出”可以共存。
 
 **本库实验建议：** 扫量化尺度，画 token 数—重建误差—接触动作误差的曲线；不要只在平滑轨迹上检验压缩。
+
+<!-- reading-footer-start -->
+[前一篇：π0.5](03_pi05.md) · [接着读：KI](04_knowledge_insulation.md) · [返回PI入口](README.md)
+<!-- reading-footer-end -->

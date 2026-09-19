@@ -1,5 +1,9 @@
 # Gemini Robotics 1.5
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [DeepMind入口](../deepmind/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** ER编排 + Thinking VLA + Motion Transfer。
 
 **来源类型：** 技术报告 · [原始来源](https://arxiv.org/abs/2510.03342) · [展开阅读](../deepmind/02_gemini_robotics_15.md)
@@ -17,3 +21,7 @@ ER 1.5分解任务、用工具并检查进展；VLA可生成贴近动作的思�
 重点看MT/no-MT、thinking开关和编排器对照。Table 1的子任务失败合计由Flash编排的44.5%降至ER 1.5的22%；这是子任务失败分类，不能换算成完整任务成功率。长任务中不同本体的后训练条件也不完全相同。
 
 **必须保留的边界：** 可从无动作标注视频中学习，不代表整个VLA无需动作监督；ER API访问不等于VLA权重开放。
+
+<!-- reading-footer-start -->
+[前一篇：Gemini Robotics](08_gemini.md) · [接着读：Gemini Robotics 2](10_gemini2.md) · [返回DeepMind入口](../deepmind/README.md)
+<!-- reading-footer-end -->

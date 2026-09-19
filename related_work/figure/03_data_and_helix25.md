@@ -1,6 +1,10 @@
 # Figure 数据主线：Go-Big → Index → Helix 2.5
 
-核对日期：2026-09-18。**Helix 2.5 于前一天发布**，以下来自官方技术页面，尚不能当作独立复现结论。当前发现的材料是网页，不伪造 PDF 论文。
+<!-- reading-nav-start -->
+[首页](../../README.md) · [Figure入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
+核对日期：2026-09-18。**Helix 2.5 于2026-09-17发布**，以下来自官方技术页面，尚不能当作独立复现结论。当前发现的材料是网页，不伪造 PDF 论文。
 
 ## Go-Big（2025-09-18）
 
@@ -32,3 +36,7 @@
 - [Bedroom Tidy](https://www.figure.ai/news/helix-02-bedroom-tidy)：2026-05-08，作为多机器人互动案例。
 
 以上是拓展阅读入口，本库未将展示视频自行转写为统计性能结论。
+
+<!-- reading-footer-start -->
+[前一篇：Helix 02](02_helix02.md) · [接着读：DeepMind](../deepmind/README.md) · [返回Figure入口](README.md)
+<!-- reading-footer-end -->

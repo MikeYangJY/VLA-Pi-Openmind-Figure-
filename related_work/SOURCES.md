@@ -1,5 +1,9 @@
 # 论文与官方资料目录
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [资料入口](README.md) · [按问题查找](FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 原资料核对日期：2026-09-18；本次专题补充日期：2026-09-19。共 **20 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 5 篇提供原始链接）**，另登记 **18 项官方网页、模型卡、代码或数据入口**。
 
 用户提供 PDF 保留原字节内容。上游 arXiv 可能更新版本；本库的准确存档由 [sources.json](sources.json) 中的 SHA-256、字节数与页数确定。文件名仅用于检索，不能推断它必然是上游最新修订。
@@ -78,3 +82,7 @@ Figure 本次检索到的关键技术材料主要为官方网页。本库保存�
 [references.bib](references.bib) 是标题/年份/URL 的最小书目索引，未伪造完整作者名单或会议信息；正式论文写作应从原始发表页面导出完整 BibTeX。PDF、原论文中的图表与原始代码沿用各自的权利和许可，本库没有对第三方材料重新授权。
 
 补充归档的 6 篇 PDF 使用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，作者署名保留在未改动的 PDF 中，许可来源记录在 sources.json。Hi Robot 使用 Shi et al. (2025), ICML, PMLR 267:54919–54933 的[正式发表版本](https://proceedings.mlr.press/v267/shi25d.html)；RT-2 使用 Zitkovich et al. (2023), CoRL, PMLR 229:2165–2183 的[正式发表版本](https://proceedings.mlr.press/v229/zitkovich23a.html)。两者适用 [PMLR 发表许可](https://proceedings.mlr.press/pmlr-license-agreement.pdf)。ACT、Diffusion Policy、Human-to-Robot、RL Token 提供原始下载链接与原创笔记，不在本公开库复制全文。
+
+<!-- reading-footer-start -->
+[返回资料入口](README.md)
+<!-- reading-footer-end -->

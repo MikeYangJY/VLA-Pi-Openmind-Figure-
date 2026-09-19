@@ -1,5 +1,9 @@
 # Hi Robot
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](../pi/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 总体意图/反馈 → 高层子任务 → 低层VLA闭环执行。
 
 **来源类型：** 论文 · [原始来源](https://proceedings.mlr.press/v267/shi25d.html) · [展开阅读](../pi/08_supporting_work.md)
@@ -17,3 +21,7 @@
 比较flat VLA、通用VLM高层与专门训练的高层，并做合成数据等消融，评价复杂指令跟随与任务进展。收益应从实际执行结果判定，不能只看生成的语言计划是否合理。
 
 **必须保留的边界：** 高层输出子任务不代表整个长任务已规划正确；需连同低层失败与重规划能力看。
+
+<!-- reading-footer-start -->
+[接着读：机制与数据](../MECHANISMS.md) · [返回PI入口](../pi/README.md)
+<!-- reading-footer-end -->

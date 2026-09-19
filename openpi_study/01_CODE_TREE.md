@@ -1,5 +1,9 @@
 # 代码树：先分清五层
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 | 层 | 位置 | 负责什么 | 先读程度 |
 |---|---|---|---|
 | 入口 | `scripts/`、`examples/` | 启动训练、服务、数据转换或评测 | 先看调用关系，不立即运行 |
@@ -193,3 +197,7 @@ code/
 `third_party/aloha`和`third_party/libero`是外部Git子模块指针，未展开在这个源码快照里；它们的commit记录在[UPSTREAM.json](UPSTREAM.json)。完整运行相应环境时，建议另行clone固定版本上游仓库并初始化其子模块，而非在这个嵌套学习快照中直接执行根仓库的submodule命令。
 
 每个文件具体用途、函数定位和易错点见[逐文件目录](FILE_INDEX.md)。下一步：[小白阅读路线](02_START_HERE.md)。
+
+<!-- reading-footer-start -->
+[接着读：跟一次推理](02_START_HERE.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

@@ -1,5 +1,9 @@
 # Helix：连续 latent 连接语义与高速控制
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [Figure入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **材料性质：官方技术说明，非完整可复现论文。** [官方原文，2025-02-20](https://www.figure.ai/news/helix)。重点读 Model and Training Details 与 Optimized Streaming Inference。本次未在该官方材料中找到可下载的独立论文、训练代码或 Helix 权重。
 
 ## 官方披露的 workflow
@@ -31,3 +35,7 @@ Helix 与 KI 最直接的差异在训练梯度：前者公布的是联合反传�
 4. 同一 latent 在不同机器人状态下，是否仍能表达可执行目标？
 
 **建议实验：** 在可控替代系统里固定低层 policy，注入不同的高层延迟，分别测动作响应与任务语义正确率。这是机制实验，不是原始 Helix 的复现。
+
+<!-- reading-footer-start -->
+[接着读：Helix 02](02_helix02.md) · [返回Figure入口](README.md)
+<!-- reading-footer-end -->

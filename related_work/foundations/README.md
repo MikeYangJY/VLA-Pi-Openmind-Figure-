@@ -1,5 +1,9 @@
 # 必要背景：知道每个设计从哪里来
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [背景入口](../README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 这些工作用于建立技术坐标，不需要把所有背景论文先读完再读主线。PDF 收录状态见 [SOURCES](../SOURCES.md)。
 
 | 工作 | 机制与 workflow | 与主线的联系 | 读什么 / 不要误读 |
@@ -27,3 +31,7 @@
 5. goal image、language subtask 和 action chunk 分别处于哪一层？
 
 答不出 1/2 时先补控制接口；答不出 3/4 时先补闭环评估；答不出 5 时回到 [统一 workflow](../WORKFLOW.md)。
+
+<!-- reading-footer-start -->
+[返回背景入口](../README.md)
+<!-- reading-footer-end -->

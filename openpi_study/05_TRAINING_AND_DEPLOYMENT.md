@@ -1,5 +1,9 @@
 # 从数据、训练到部署：每一步做什么
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 以LIBERO为阅读例子。下面是调用关系，不代表已经在当前电脑完成模型训练。
 
 ```mermaid
@@ -72,3 +76,7 @@ JAX训练也可能使用PyTorch DataLoader。读数据的工具与做神经网�
 先用虚拟样本检查字段与shape → 在适合的GPU环境加载checkpoint做无机器人推理 → 跑仿真评测 → 适配自己的数据并小规模微调 → 再考虑具体硬件。
 
 当前学习交付只验证源码注释不改变可执行语义，没有执行上述模型/机器人实验。[simple_client](code/examples/simple_client/README.md)适合将来检查接口，但它的随机输入结果不代表任务成功率。
+
+<!-- reading-footer-start -->
+[接着读：π0.5差异](04_PI05_DIFF.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

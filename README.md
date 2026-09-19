@@ -1,21 +1,40 @@
-# VLA：Physical Intelligence · Google DeepMind · Figure
+# VLA 机器人学习与调研
 
-面向机器人 VLA 研究入门与进一步精读的中文资料库。按 **数据 → 训练 → 推理 → 控制 → 评估 → 经验回流** 组织，而不是只按版本号罗列论文。
+**从“机器人怎么学会做事”，走到“能看懂论文、代码，并问清专家”。** 覆盖 Physical Intelligence（PI）、Google DeepMind 和 Figure；代码只学习 **π0、π0.5**。
 
-**资料核对日期：2026-09-19。** 仓库名称沿用 Openmind，但本库的 Gemini Robotics 指 **Google DeepMind**；不将其与其他名为 OpenMind 的项目混同。
+## 按这六步读
 
-## 从这里开始
+| 顺序 | 点这里 | 看完要能回答 |
+|---|---|---|
+| ① 建立框架 | [一张图看懂机器人系统](related_work/00_OVERVIEW.md) | 训练、规划、动作生成、控制和评估各做什么？ |
+| ② 看核心差异 | [八模型对照表](related_work/MODEL_COMPARISON_8.md) | 相对π0，各家改了哪里？哪些数字能比？ |
+| ③ 按公司读 | [Figure](related_work/figure/README.md) → [DeepMind](related_work/deepmind/README.md) → [PI](related_work/pi/README.md) | 每项工作解决什么问题，用什么方法，证据是什么？ |
+| ④ 学懂关键机制 | [训练、数据、记忆与世界模型](related_work/MECHANISMS.md) | 动作怎么学、数据怎么处理、过去和未来信息怎么用？ |
+| ⑤ 跟一次代码 | [openpi：只学π0与π0.5](openpi_study/README.md) | 一条观测如何变成动作？一次训练更新在哪里发生？ |
+| ⑥ 准备访谈 | [从公开证据到专家问题](related_work/INTERVIEW_PREP.md) | 已知什么、还缺什么，如何追问到可核对的答案？ |
 
-- **八模型横向对照：** [架构、训练数据、数据量、泛化、速度、时长、核心问题与不足](related_work/MODEL_COMPARISON_8.md) · [完整单表CSV](related_work/data/model_comparison_8.csv)。每项附来源，缺失信息标注未披露。
-- **三项数据质量概念：** [运动学检查、多摄像头成功验证、视觉归一化](related_work/pi/11_data_quality_three_concepts.md)。从具体例子到openpi代码，并列出访谈追问。
+**按你目前的基础：** π0、π0.5、π0.7已经精读，可以快速扫①②，然后从[Figure学习入口](related_work/figure/README.md)开始；需要补机制时回④。完整安排及每一步的自测见[学习路线](related_work/LEARNING_PATH.md)。
 
-- **2026-09-19 学习专题：** [π0.6 / π0.6* / MEM 的区别](related_work/pi/09_pi06_family.md) → [从零理解 action expert 与 flow matching](openpi_study/07_FLOW_MATCHING_FROM_ZERO.md) → [与 π0.7 世界模型的训练、数据对照](related_work/pi/10_pi07_world_model_vs_action_expert.md)。含逐步公式、手算例子、同一轨迹拆成不同训练样本的表格。
-- [18 篇简洁调研笔记](related_work/quick_notes/README.md)：每篇按「核心大纲 → 问题 → 方法 → 实验」阅读，先建立框架。
-- [openpi 中文代码学习：π0 与 π0.5](openpi_study/README.md)：代码树、初学者阅读顺序、逐文件说明和中文注释源码。
-- [Related work 总入口](related_work/README.md)：文献地图、重点工作与阅读顺序。
-- [统一调研 workflow](related_work/WORKFLOW.md)：以后增加论文时沿用的分析方法。
-- [三条路线的流程比较](related_work/COMPARISON.md)：模型边界、接口、训练方法、评估口径。
-- [针对当前基础的学习路线](related_work/LEARNING_PATH.md)：已读 π0、π0.5、π0.7 后，接下来怎么学。
-- [文献与官方资料目录](related_work/SOURCES.md)：PDF、官方网站、原始来源和校验信息。
+## 带着问题来，直接查
 
-本库区分论文报告、官方技术说明和本库分析。没有公开的训练细节明确标为“未披露”；公司演示不等同于独立复现。原始论文与本库笔记分开放置，版权及许可归原作者或原发布方。
+- **只想快速看一项工作：** [18篇简洁笔记](related_work/quick_notes/README.md)，每篇都是“大纲 → 问题 → 方法 → 实验”。
+- **想比较模型：** [八模型表](related_work/MODEL_COMPARISON_8.md) · [Excel可打开的CSV](related_work/data/model_comparison_8.csv) · [系统流程比较](related_work/COMPARISON.md)。
+- **卡在某个概念：** [按问题查找](related_work/FIND_BY_QUESTION.md) · [术语速查](openpi_study/GLOSSARY.md)。
+- **要找原论文或某个文件：** [论文与官方来源](related_work/SOURCES.md) · [完整内容目录](related_work/CONTENTS.md)。
+
+## 文件分工
+
+```text
+README.md                 只负责带你选入口
+related_work/             学习路线、对比、机制与访谈准备
+  quick_notes/           每项工作先读这一页
+  figure/ deepmind/ pi/   分公司精读笔记，各有阅读入口
+  papers/                原始PDF，按笔记需要回查
+openpi_study/             π0 / π0.5代码学习
+  code/                  带中文注释的固定版本源码
+  file_notes/            每个文件的说明，通过FILE_INDEX查找
+```
+
+本库区分**论文报告、官方披露、学习解释、未披露项**。结构整理日期：2026-09-19；技术事实以各篇注明的资料版本为准。仓库名保留Openmind，本文的Gemini Robotics均指 **Google DeepMind**。
+
+[资料索引](related_work/README.md) · [更新记录](related_work/CHANGELOG.md)

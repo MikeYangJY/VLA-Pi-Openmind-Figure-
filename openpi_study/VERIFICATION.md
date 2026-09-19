@@ -1,5 +1,9 @@
 # 验证说明
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 核对日期：2026-09-18。上游固定版本：`215abfb217dbac7d5f1273282331b9b1866c0479`。
 
 | 检查 | 结果 |
@@ -21,3 +25,7 @@
 **文档链接：** 本库新增与维护的说明页已检查相对路径和源码行号。原样保留的上游 DROID/UR5 文档有 6 处相对链接问题，正确入口已补在 [DROID 文档说明](file_notes/examples/droid/README_train.md.md) 和 [UR5 文档说明](file_notes/examples/ur5/README.md.md)。
 
 逐文件内容哈希、新增注释数、符号数见 [ANNOTATION_MANIFEST.json](ANNOTATION_MANIFEST.json)；来源及子模块信息见 [UPSTREAM.json](UPSTREAM.json)。
+
+<!-- reading-footer-start -->
+[接着读：访谈准备](../related_work/INTERVIEW_PREP.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

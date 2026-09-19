@@ -1,5 +1,9 @@
 # 从阅读到最小复现
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [选读入口](RESEARCH_PRACTICE.md) · [按问题查找](FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 这是一份下一阶段的操作路线。本次没有下载模型权重、训练模型、调用付费 API 或控制机器人。
 
 ## 先划清可获取的对象
@@ -15,17 +19,11 @@
 
 openpi 核对版本：[`215abfb217dbac7d5f1273282331b9b1866c0479`](https://github.com/Physical-Intelligence/openpi/tree/215abfb217dbac7d5f1273282331b9b1866c0479)。开放状态会改变，后续实验先重新核对。
 
-## openpi 代码阅读路线
+## 先完成代码阅读，再运行
 
-以该版本为基准，从 README 的官方入口依次读：
+阅读顺序统一见[openpi学习入口](../openpi_study/README.md)：跟推理 → 理解训练 → 比较π0.5 → 补工程。这里接着讨论运行时的验收，不另设一套阅读顺序。
 
-1. 数据转换与输入/输出映射：相机字段、图像布局、本体状态、动作维度。
-2. 训练配置与归一化统计：checkpoint 对应哪个数据/本体；训练集统计如何复用于推理。
-3. 模型前向与动作采样：prefix/suffix token、attention mask、action horizon、flow steps。
-4. policy 包装与服务：原始观测经过哪些变换，动作如何还原。
-5. 官方模拟环境评估：固定种子与任务集，记录完整闭环结果。
-
-不在这里提供未经实际执行的“一键复现”承诺。官方 README 指向 Linux/NVIDIA 环境，JAX 与 PyTorch 路线的功能支持也有差别；安装时按固定版本文档操作。
+先核对数据映射、归一化统计、模型配置与平台动作单位，再按固定版本文档准备环境。官方README指向Linux/NVIDIA环境；JAX与PyTorch功能支持也有差别。
 
 ## 第一个可验收的里程碑
 
@@ -43,3 +41,7 @@ openpi 核对版本：[`215abfb217dbac7d5f1273282331b9b1866c0479`](https://githu
 | 语义跟随 | 同一场景与对象 | 指令限制条件 | 选对对象、约束违反、任务完成 |
 
 只报告离线动作误差不足以证明闭环任务能力。模型损失下降、成功率上升、速度提高，可能对应不同原因。
+
+<!-- reading-footer-start -->
+[返回选读入口](RESEARCH_PRACTICE.md)
+<!-- reading-footer-end -->

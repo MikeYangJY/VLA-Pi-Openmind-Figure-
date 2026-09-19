@@ -1,5 +1,9 @@
 # RL Token
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](../pi/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** 冻结VLA表征 + 参考动作 → 小actor-critic在线学习。
 
 **来源类型：** 论文 · [原始来源](https://www.pi.website/download/rlt.pdf) · [展开阅读](../pi/08_supporting_work.md)
@@ -17,3 +21,7 @@
 四项精细操作实验比较在线改进效果、成功率与速度；“最多3倍”对应特定难阶段和设置，不是整项家务的通用加速比。优先看训练交互量和参考动作相关消融。
 
 **必须保留的边界：** 不是手工加一个固定比例的残差；该方法也不能自动视为RECAP或π0.7的内部实现。
+
+<!-- reading-footer-start -->
+[接着读：机制与数据](../MECHANISMS.md) · [返回PI入口](../pi/README.md)
+<!-- reading-footer-end -->

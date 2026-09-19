@@ -1,5 +1,9 @@
 # MEM：短期视觉记忆与长期语义记忆
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **阅读优先级：高。** [原论文](../papers/pi/mem.pdf) · [arXiv](https://arxiv.org/abs/2603.03596)。依据方法章节中的 factorization、Language Memory、Video Encoder 和实验消融。
 
 **新增详细对照：** [π0.6 家族区别与数据要求](09_pi06_family.md)。MEM 的历史与记忆机制不等于 RECAP 的价值/优势学习；训练数据包含 rollout 和纠错，也不能单凭数据来源断定它使用完整 RECAP。
@@ -50,3 +54,7 @@ flowchart TB
 **本库分析：** 长期记忆需要保留足以决定未来动作的信息，同时防止错误状态被不断重复。可以构造“当前画面相同、过去计数不同”的成对测试，并分别注入错误摘要和错误视觉历史，测模型能否恢复。只展示长视频不能排除模型仅依赖场景可见线索。
 
 下一步把 MEM 与 [π0.7](07_pi07.md) 中视觉目标和异步更新的接口对照。
+
+<!-- reading-footer-start -->
+[前一篇：RECAP](05_recap.md) · [接着读：π0.7](07_pi07.md) · [返回PI入口](README.md)
+<!-- reading-footer-end -->

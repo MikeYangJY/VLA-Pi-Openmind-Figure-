@@ -1,5 +1,9 @@
 # 论文 / 技术工作名称
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [调研方法入口](../WORKFLOW.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 > 这是待填写模板。复制后替换字段；不要把占位内容当成已核实事实。
 
 - 正式标题、作者/团队：
@@ -37,3 +41,7 @@
 ## 自己的判断
 
 机制解释；局限；一个最小消融；尚未解答的问题。
+
+<!-- reading-footer-start -->
+[返回调研方法入口](../WORKFLOW.md)
+<!-- reading-footer-end -->

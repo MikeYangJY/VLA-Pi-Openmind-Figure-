@@ -1,5 +1,9 @@
 # Gemini Robotics 1.5：编排器、Thinking VLA 与跨本体迁移
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [DeepMind入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **阅读优先级：最高。** [原报告](../papers/deepmind/gemini_robotics_15.pdf) · [arXiv](https://arxiv.org/abs/2510.03342)。先读 Section 2（PDF pp.3–4），再读 Sections 3、5（pp.17–19）与 Appendix D。
 
 ## 三项不同的贡献
@@ -66,3 +70,7 @@ Section 5 脚注还明确：ALOHA 使用预训练 checkpoint，而双臂 Franka 
 **本库建议：** 最容易独立研究的是 orchestrator 接口和失败分解：固定一个可用动作策略，比较高层计划、结束检测和失败恢复。实际用替代 VLA 或其他 ER 模型做实验时，要称为“受 Gemini workflow 启发的实现”，不能声称复现原闭源模型。
 
 开放访问的 ER API 与受限访问的完整 VLA 是两回事；最新变化见 [更新说明](03_updates.md)。
+
+<!-- reading-footer-start -->
+[前一篇：Gemini Robotics](01_gemini_robotics.md) · [接着读：Gemini Robotics 2及相关更新](03_updates.md) · [返回DeepMind入口](README.md)
+<!-- reading-footer-end -->

@@ -1,5 +1,9 @@
 # DeepMind 补充更新：部署、ER 1.6 与 GR 2
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [DeepMind入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 核对日期：2026-09-18。这里记录与主线直接相关的官方更新，不作为穷尽所有机器人研究的目录。
 
 ## Gemini Robotics On-Device（2025-06-24）
@@ -29,3 +33,7 @@
 旗舰动作模型的合作伙伴访问与 ER 的开发者访问是不同权限。应以 [模型页面](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/) 和对应版本发布页为准；能够访问 ER 不等于原 VLA 权重、训练数据或完整机器人系统开放。
 
 这些是文档核查结果；本库未申请 tester、调用付费 API 或验证账号实际可用权限。
+
+<!-- reading-footer-start -->
+[前一篇：Gemini Robotics 1.5](02_gemini_robotics_15.md) · [接着读：PI](../pi/README.md) · [返回DeepMind入口](README.md)
+<!-- reading-footer-end -->

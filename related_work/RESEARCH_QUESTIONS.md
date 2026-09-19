@@ -1,5 +1,11 @@
 # 可以收敛成研究课题的问题
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [选读入口](RESEARCH_PRACTICE.md) · [按问题查找](FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
+这里是主线完成后的选读内容；准备客户/专家访谈请去[访谈准备](INTERVIEW_PREP.md)。
+
 以下是本库提出的实验方向，不是对任何团队未公开实现的断言。
 
 | 问题 | 现有工作提供的线索 | 最小可检验假设 | 主要混淆因素 |
@@ -22,3 +28,7 @@
 ## 提案必须包含
 
 问题与假设；一篇主要对照论文；固定基线；自变量与控制项；任务与数据切分；成功/失败定义；计算与交互预算；预期失败模式；什么结果会让你否定自己的假设。
+
+<!-- reading-footer-start -->
+[返回选读入口](RESEARCH_PRACTICE.md)
+<!-- reading-footer-end -->

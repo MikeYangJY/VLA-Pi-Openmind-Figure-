@@ -1,5 +1,9 @@
 # Gemini Robotics（原始报告）
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [DeepMind入口](../deepmind/README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **核心大纲：** Gemini知识 → ER具身能力 → VLA动作 → 专项适配。
 
 **来源类型：** 技术报告 · [原始来源](https://arxiv.org/abs/2503.20020) · [展开阅读](../deepmind/01_gemini_robotics.md)
@@ -17,3 +21,7 @@ ER强化指点、抓取、轨迹等具身推理；动作模型以相关能力初
 比较通用、专用策略与多类分布变化；复杂任务使用每任务约2,000–5,000条示范。ER的10示范ICL实验中，模拟约53→65%、真机约25→65%；这些是ER控制管线的结果，不能记成旗舰VLA的统一成功率。
 
 **必须保留的边界：** 专项数据不能单独证明RT-X不足；ER与VLA的训练关系不等于运行时总有一个ER规划器。
+
+<!-- reading-footer-start -->
+[接着读：Gemini Robotics 1.5](09_gemini15.md) · [返回DeepMind入口](../deepmind/README.md)
+<!-- reading-footer-end -->

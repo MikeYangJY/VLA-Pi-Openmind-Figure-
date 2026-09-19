@@ -1,5 +1,11 @@
 # 统一调研 workflow
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [调研方法入口](README.md) · [按问题查找](FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
+这是以后增加论文时使用的调研方法。初次学习先从[系统总览](00_OVERVIEW.md)开始，顺序见[学习路线](LEARNING_PATH.md)。
+
 目标：每次读完一项工作，都能解释它修改了机器人系统中的哪一部分，以及证据足以支持多大的结论。
 
 ## 1. 定位与取证
@@ -69,3 +75,7 @@ flowchart TB
 ## 6. 维护与复核
 
 下载 PDF 后验证文件头、页数、首屏标题和哈希；图表读数回到原页核对。添加来源链接与访问日期。对新闻型更新保留“发布时声称”和“本次能验证的材料”两个边界。更新资料不会自动改写用户的阅读进度。
+
+<!-- reading-footer-start -->
+[接着读：笔记模板](templates/PAPER_NOTE.md) · [返回调研方法入口](README.md)
+<!-- reading-footer-end -->

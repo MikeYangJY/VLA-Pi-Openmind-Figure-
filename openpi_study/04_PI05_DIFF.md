@@ -1,5 +1,9 @@
 # π0.5：只沿着开关追三条路径
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [代码学习入口](README.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 入口：[Pi0Config](code/src/openpi/models/pi0_config.py)。设置`pi05=True`后，模型仍使用[Pi0](code/src/openpi/models/pi0.py)类；PyTorch同理。
 
 ## 路径一：state从哪里进入
@@ -45,3 +49,7 @@ LIBERO示例也有配置差别：一些旧π0配置启用额外delta变换，π0
 所以要分清：**权重是怎样预训练出来的**，以及**这份开源代码接下来怎样加载、微调和运行权重**。freeze_filter和LoRA也不能自动当成完整KI实现。
 
 **自测：** 只改pi05=True但仍用错误的tokenizer/统计/权重会怎样？为什么π0.5把state离散了，却仍是连续动作策略？
+
+<!-- reading-footer-start -->
+[接着读：按需补后端与组件](06_BACKENDS_AND_COMPONENTS.md) · [返回代码学习入口](README.md)
+<!-- reading-footer-end -->

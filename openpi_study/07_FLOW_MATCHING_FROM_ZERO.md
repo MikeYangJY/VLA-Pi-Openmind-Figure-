@@ -1,5 +1,28 @@
 # 从零理解：action expert 的 flow matching 在学什么？
 
+<!-- reading-nav-start -->
+[首页](../README.md) · [机制入口](../related_work/MECHANISMS.md) · [按问题查找](../related_work/FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
+<!-- reading-toc-start -->
+<details>
+<summary>本页目录：按问题跳读</summary>
+
+- [1. VLM 和 action expert 分别做什么](#1-vlm-和-action-expert-分别做什么)
+- [2. 先认识 action chunk：一整段未来动作](#2-先认识-action-chunk一整段未来动作)
+- [3. 一条真实训练样本到底需要什么](#3-一条真实训练样本到底需要什么)
+- [4. Flow matching 的五步训练](#4-flow-matching-的五步训练)
+- [5. 用两个数字手算一次](#5-用两个数字手算一次)
+- [6. 推理：没有答案 A，如何生成动作？](#6-推理没有答案-a如何生成动作)
+- [7. 为什么不直接回归一个动作答案？](#7-为什么不直接回归一个动作答案)
+- [8. 从采集到训练，最容易出错的地方](#8-从采集到训练最容易出错的地方)
+- [9. 回到注释代码：只看这四处](#9-回到注释代码只看这四处)
+- [10. 自测与答案](#10-自测与答案)
+
+</details>
+<!-- reading-toc-end -->
+
+
 核对日期：2026-09-19。适合已经知道“图像 + 语言 → 机器人动作”，但还不理解动作如何生成的读者。全文用本仓库固定版本 **openpi 的时间方向**，对应 π0 / π0.5 的连续动作实现。
 
 **核心大纲：** action expert 是什么 → 一条训练数据长什么样 → 加噪声与算 loss → 推理如何得到动作 → 对应代码 → 区分世界模型。
@@ -211,4 +234,6 @@ flow matching 学的是随噪声程度变化的条件向量场，不是把所有
 5. **模型一定能得到与某条示范完全相同的 A 吗？** 不一定；目标是从条件动作分布生成合适动作，不是检索那条示范。
 6. **给它一段无动作标签的视频就能直接训练这个 loss 吗？** 不能直接用这套机器人动作监督构造；视频需用于其他任务或经过额外处理。
 
-[返回代码学习入口](README.md) · [π0.6 家族区别](../related_work/pi/09_pi06_family.md)
+<!-- reading-footer-start -->
+[接着读：数据质量](../related_work/pi/11_data_quality_three_concepts.md) · [返回机制入口](../related_work/MECHANISMS.md)
+<!-- reading-footer-end -->

@@ -1,5 +1,9 @@
 # 把 PI 主线补完整的五项工作
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [PI入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 这些是机制连接，不是额外的版本号。每项都沿用问题→训练→运行→证据→研究问题的 workflow。
 
 ## Hi Robot：开放指令与执行中的语言纠正
@@ -63,3 +67,7 @@
 **证据：** 原文四项精细操作实验针对任务最难阶段改善速度与成功率。“最多 3×”指特定阶段/设置的提速，不是整个家务任务或所有模型的平均提升。
 
 **本库问题：** 压缩 token 丢失什么接触信息？参考动作条件会不会让 actor 只复制 VLA？这比笼统问“RL 是否有用”更容易形成实验。
+
+<!-- reading-footer-start -->
+[接着读：机制与数据](../MECHANISMS.md) · [返回PI入口](README.md)
+<!-- reading-footer-end -->

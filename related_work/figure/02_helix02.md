@@ -1,5 +1,9 @@
 # Helix 02：把语义、移动操作与全身控制分层
 
+<!-- reading-nav-start -->
+[首页](../../README.md) · [Figure入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
+<!-- reading-nav-end -->
+
 **材料性质：官方技术说明。** [官方原文，2026-01-27](https://www.figure.ai/news/helix-02)。本次未获得公开训练代码/权重或可完整复现的技术报告。
 
 ## 官方披露的架构与训练
@@ -30,3 +34,7 @@ PI 论文中的 action expert 主要讨论动作生成；S0 讨论身体稳定�
 本次技术说明没有充分披露外部复现全部 S1/S2 训练所需的配置、数据和全量测试协议。因此不要把初代 Helix 的全部参数、损失和数据量自动沿用到 02。
 
 **建议实验：** 如果未来研究全身 VLA，分别统计高层选错目标、S1 目标不可执行、S0 跟踪/平衡失败。这样才能知道应该改语义模型、训练数据还是控制层。
+
+<!-- reading-footer-start -->
+[前一篇：Helix](01_helix.md) · [接着读：Index与Helix 2.5](03_data_and_helix25.md) · [返回Figure入口](README.md)
+<!-- reading-footer-end -->
