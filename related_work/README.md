@@ -1,10 +1,12 @@
 # Related work：从 VLA 到完整机器人系统
 
-核对日期：2026-09-18。适合已经仔细读过 π0、π0.5、π0.7，开始深入 Gemini Robotics 与 Helix 的读者。
+核对日期：2026-09-19。适合已经仔细读过 π0、π0.5、π0.7，开始深入 Gemini Robotics 与 Helix 的读者。
 
 **先看框架：** [18 篇简洁调研笔记](quick_notes/README.md)，每篇统一为核心大纲、问题、方法、实验。下面的阅读卡片保留更多机制与证据细节。代码学习另见 [openpi：只学 π0 与 π0.5](../openpi_study/README.md)。
 
 **2026-09-19 新增专题：** [π0.6 家族区别](pi/09_pi06_family.md)、[flow matching 零基础教程](../openpi_study/07_FLOW_MATCHING_FROM_ZERO.md)、[π0.7 世界模型与动作专家的数据/训练对照](pi/10_pi07_world_model_vs_action_expert.md)。先区分模型、训练方法和记忆，再沿同一条轨迹看不同监督目标。
+
+**横向调研与数据专题：** [八模型核心对照表](MODEL_COMPARISON_8.md)（[CSV](data/model_comparison_8.csv)） · [三项数据质量概念](pi/11_data_quality_three_concepts.md)。
 
 ## 先建立六个问题
 

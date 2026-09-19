@@ -6,6 +6,8 @@
 
 如果卡在“噪声为什么能变成动作”，先看新增的 [flow matching 零基础教程](07_FLOW_MATCHING_FROM_ZERO.md)：训练样本、五步计算、两个数字的手算、推理与真实控制周期的区别。再读 [π0.7 世界模型对照](../related_work/pi/10_pi07_world_model_vs_action_expert.md)，理解动作标签与未来图像标签的不同。源码主线仍只覆盖 π0 / π0.5。
 
+想看数据如何变成可信训练样本，补读[运动学检查、多摄像头成功验证与视觉归一化](../related_work/pi/11_data_quality_three_concepts.md)，其中图像部分逐步对应本版本源码。
+
 ## 从这六步开始
 
 1. [代码树：每个目录干什么](01_CODE_TREE.md)

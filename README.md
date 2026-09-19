@@ -2,9 +2,12 @@
 
 面向机器人 VLA 研究入门与进一步精读的中文资料库。按 **数据 → 训练 → 推理 → 控制 → 评估 → 经验回流** 组织，而不是只按版本号罗列论文。
 
-**资料核对日期：2026-09-18。** 仓库名称沿用 Openmind，但本库的 Gemini Robotics 指 **Google DeepMind**；不将其与其他名为 OpenMind 的项目混同。
+**资料核对日期：2026-09-19。** 仓库名称沿用 Openmind，但本库的 Gemini Robotics 指 **Google DeepMind**；不将其与其他名为 OpenMind 的项目混同。
 
 ## 从这里开始
+
+- **八模型横向对照：** [架构、训练数据、数据量、泛化、速度、时长、核心问题与不足](related_work/MODEL_COMPARISON_8.md) · [完整单表CSV](related_work/data/model_comparison_8.csv)。每项附来源，缺失信息标注未披露。
+- **三项数据质量概念：** [运动学检查、多摄像头成功验证、视觉归一化](related_work/pi/11_data_quality_three_concepts.md)。从具体例子到openpi代码，并列出访谈追问。
 
 - **2026-09-19 学习专题：** [π0.6 / π0.6* / MEM 的区别](related_work/pi/09_pi06_family.md) → [从零理解 action expert 与 flow matching](openpi_study/07_FLOW_MATCHING_FROM_ZERO.md) → [与 π0.7 世界模型的训练、数据对照](related_work/pi/10_pi07_world_model_vs_action_expert.md)。含逐步公式、手算例子、同一轨迹拆成不同训练样本的表格。
 - [18 篇简洁调研笔记](related_work/quick_notes/README.md)：每篇按「核心大纲 → 问题 → 方法 → 实验」阅读，先建立框架。
