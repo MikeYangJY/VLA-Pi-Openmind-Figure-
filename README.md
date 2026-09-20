@@ -33,6 +33,7 @@
 
 ## 带着问题来，直接查
 
+- **准备采访 PI：** [15 个主问题与现场追问](related_work/pi/12_pi_interview_guide.md)，覆盖客户 12 项需求，按 75/60 分钟安排节奏，附可能回答、分支追问与回填表。
 - **只想快速看一项工作：** [18篇简洁笔记](related_work/quick_notes/README.md)，每篇都是“大纲 → 问题 → 方法 → 实验”。
 - **想比较模型：** [八模型表](related_work/MODEL_COMPARISON_8.md) · [Excel可打开的CSV](related_work/data/model_comparison_8.csv) · [系统流程比较](related_work/COMPARISON.md)。
 - **卡在某个概念：** [按问题查找](related_work/FIND_BY_QUESTION.md) · [术语速查](openpi_study/GLOSSARY.md)。
