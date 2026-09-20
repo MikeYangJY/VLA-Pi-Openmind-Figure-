@@ -36,7 +36,7 @@
 - **想听懂 Figure 每代变了什么：** [白话迭代说明](related_work/figure/04_evolution_plain_language.md)，按“遇到什么问题 → 增加什么 → 解决到哪里”阅读。
 - **想弄懂 Index 怎样处理数据：** [官方管线逐步拆解](related_work/figure/05_index_pipeline.md)，用叠毛巾例子解释过滤、反作弊、去重、再平衡与标注。
 - **想查各家具体做过什么：** [工业 / 家庭任务清单](related_work/SCENARIOS_BY_MODEL.md)，逐模型区分具体任务、评测、演示和现场运行。
-- **准备采访 PI：** [60 分钟 PI 访谈问卷](related_work/pi/12_pi_interview_guide.md)：9 个★必问＋6 个补充，附逐分钟安排、必追一句、超时删减顺序和客户需求回填表。
+- **准备采访 PI：** [60 分钟 PI 访谈提纲](related_work/pi/12_pi_interview_guide.md)：12 个必问覆盖全部客户需求；每题只看“对应客户、主问、漏答时补齐”。
 - **只想快速看一项工作：** [18篇简洁笔记](related_work/quick_notes/README.md)，每篇都是“大纲 → 问题 → 方法 → 实验”。
 - **想比较模型：** [八模型表](related_work/MODEL_COMPARISON_8.md) · [Excel可打开的CSV](related_work/data/model_comparison_8.csv) · [系统流程比较](related_work/COMPARISON.md)。
 - **卡在某个概念：** [按问题查找](related_work/FIND_BY_QUESTION.md) · [术语速查](openpi_study/GLOSSARY.md)。

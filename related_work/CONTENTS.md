@@ -58,7 +58,7 @@
 - [π0.6、π0.6*、π0.6-MEM：分别改变了什么？](pi/09_pi06_family.md)
 - [π0.7 世界模型与 action expert：训练方法和数据有什么不同？](pi/10_pi07_world_model_vs_action_expert.md)
 - [三项数据质量概念：运动学检查、多摄像头成功验证、视觉归一化](pi/11_data_quality_three_concepts.md)
-- [PI 专家访谈问卷｜60 分钟：9 个必问＋6 个补充](pi/12_pi_interview_guide.md)
+- [PI 访谈提纲｜60 分钟，12 个必问](pi/12_pi_interview_guide.md)
 
 ## 简洁笔记
 

@@ -26,7 +26,7 @@
 | π0.5在代码里改了什么？ | [沿开关看差异](../openpi_study/04_PI05_DIFF.md) | [训练与部署](../openpi_study/05_TRAINING_AND_DEPLOYMENT.md) |
 | 一个术语是什么意思？ | [术语表](../openpi_study/GLOSSARY.md) | 不用先读完整张表 |
 | 如何把这些知识用于访谈？ | [访谈准备](INTERVIEW_PREP.md) | 公开回答 → 边界 → 具体追问 |
-| 这次采访 PI，怎样覆盖客户问题并追问？ | [60 分钟 PI 访谈问卷](pi/12_pi_interview_guide.md) | 9 个必问 → 6 个补充 → 超时删减 → 12 项需求回填 |
+| 这次采访 PI，怎样覆盖客户问题并追问？ | [60 分钟 PI 访谈提纲](pi/12_pi_interview_guide.md) | 12 个必问覆盖全部需求；逐题标注客户原问题与漏答核对项 |
 | 想找PDF、出处、图号或许可信息？ | [原始来源](SOURCES.md) | [源码版本/许可](../openpi_study/README.md) |
 | 读完以后能做什么小实验？ | [可选小实验](RESEARCH_PRACTICE.md) | [研究问题](RESEARCH_QUESTIONS.md) · [复现](REPRODUCTION.md) |
 
