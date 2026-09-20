@@ -6,6 +6,7 @@
 
 | 词 | 在本项目中的含义 |
 |---|---|
+| Transformer | 用attention和前馈网络等逐层加工表示的架构，可用于语言、视觉及动作模块；先看[杯子例子的白话解释](../related_work/00_START_HERE.md#transformer) |
 | observation | 当前传感器/状态与指令的集合 |
 | policy | 给定观测产生动作的策略；代码中还包含前后处理包装 |
 | tensor / array | 带多个轴的数字表；shape决定各轴含义 |

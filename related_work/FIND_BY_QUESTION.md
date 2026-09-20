@@ -2,6 +2,7 @@
 
 | 你现在想知道 | 先读哪一页 | 继续到哪里 |
 |---|---|---|
+| Transformer到底做什么，token和attention是什么？ | [零基础Transformer](00_START_HERE.md#transformer) | 同节选读Q/K/V，再连接VLM、action expert与flow matching |
 | 模型术语太多，我想从零理清架构和数据 | [零基础入门](00_START_HERE.md) | PI → Gemini → Figure，每代结构与数据一起看 |
 | VLA、规划器、动作expert、控制器是什么关系？ | [系统总览](00_OVERVIEW.md) | [系统流程比较](COMPARISON.md) |
 | 八个模型的架构、数据和能力差在哪？ | [核心对照表](MODEL_COMPARISON_8.md) | [完整CSV](data/model_comparison_8.csv) |

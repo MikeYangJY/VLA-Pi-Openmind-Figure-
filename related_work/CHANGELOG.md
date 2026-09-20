@@ -2,6 +2,7 @@
 
 ## 2026-09-20
 
+- 入门页增加Transformer概念课：token、embedding、视觉图块、attention与多层计算，选读Q/K/V及mask，并串起VLM、动作专家和flow matching；首页、术语表与查找页同步增加入口。
 - 首页前置零基础入口和白话术语速览，用同一个杯子任务串起架构、训练与执行。
 - 新增入门页：解释action expert与flow matching、ER与动作VLA、Helix的S2/S1/S0；逐版本对应训练数据，区分记忆、经验学习与未来目标图。
 - 学习路线改为先理解术语，再看公司笔记与量化对比；原始论文、详细笔记和代码保持原路径。

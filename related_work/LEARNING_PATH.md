@@ -15,7 +15,7 @@
 
 ## 你下一次学习直接这样开始
 
-1. 先读[零基础入门](00_START_HERE.md)并回答末尾四个问题，再扫[系统图](00_OVERVIEW.md)。[八模型表](MODEL_COMPARISON_8.md)留到需要查具体数字时。
+1. 先读[零基础入门](00_START_HERE.md)，理解Transformer、动作模块与训练方法，并回答末尾五个问题，再扫[系统图](00_OVERVIEW.md)。[八模型表](MODEL_COMPARISON_8.md)留到需要查具体数字时。
 2. 进入[Figure路线](figure/README.md)：Helix → Helix 02 → Index → Helix 2.5。先理解架构，再理解为什么扩展数据。
 3. 带着同样问题读[DeepMind路线](deepmind/README.md)：谁规划、谁生成动作、跨机器人迁移怎么证明。
 4. 回[PI路线](pi/README.md)补KI、RECAP、MEM及世界模型；已熟悉的π0/π0.5/π0.7只需回查。
