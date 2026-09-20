@@ -19,6 +19,7 @@
 - [① 先用一个任务看懂机器人系统](00_OVERVIEW.md)
 - [学习路线：按六步走，每步只带走一个结果](LEARNING_PATH.md)
 - [八个模型核心对照：以 π0 为架构基准](MODEL_COMPARISON_8.md)
+- [三家公司分别做过什么任务：工业与家庭分类](SCENARIOS_BY_MODEL.md)
 - [三条路线：在同一 workflow 下比较](COMPARISON.md)
 - [④ 机制路线：把动作、数据、记忆和未来目标分开学](MECHANISMS.md)
 - [⑥ 访谈准备：把客户问题转成可核对的技术问题](INTERVIEW_PREP.md)
@@ -32,6 +33,8 @@
 
 ## Figure详细笔记
 
+- [用大白话看 Figure：每一代到底变了什么？](figure/04_evolution_plain_language.md)
+- [Index 数据管线：官方披露与五步处理例子](figure/05_index_pipeline.md)
 - [Helix：连续 latent 连接语义与高速控制](figure/01_helix.md)
 - [Helix 02：把语义、移动操作与全身控制分层](figure/02_helix02.md)
 - [Figure 数据主线：Go-Big → Index → Helix 2.5](figure/03_data_and_helix25.md)

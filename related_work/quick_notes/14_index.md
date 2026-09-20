@@ -6,7 +6,7 @@
 
 **核心大纲：** 人类行为采集 → 过滤/去重/标注 → 预训练 → 机器人迁移。
 
-**来源类型：** 官方数据与技术说明 · [原始来源](https://www.figure.ai/news/introducing-index) · [展开阅读](../figure/03_data_and_helix25.md)
+**来源类型：** 官方数据与技术说明 · [原始来源](https://www.figure.ai/news/introducing-index) · [五步管线详解](../figure/05_index_pipeline.md) · [Go-Big 到 Helix 2.5](../figure/03_data_and_helix25.md)
 
 ## 1）要解决的问题
 

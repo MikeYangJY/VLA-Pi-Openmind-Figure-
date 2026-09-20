@@ -10,6 +10,8 @@
 | [系统总览](00_OVERVIEW.md) | 用一个任务分清训练、推理、控制与评估 |
 | [学习路线](LEARNING_PATH.md) | 全库统一顺序，以及你的下一轮学习安排 |
 | [八模型对照](MODEL_COMPARISON_8.md) · [CSV](data/model_comparison_8.csv) | 架构、数据类型/规模、泛化、速度/时长、问题与不足 |
+| [工业 / 家庭任务清单](SCENARIOS_BY_MODEL.md) | 按公司和模型查具体任务，区分评测、演示与现场运行 |
+| [Figure 白话迭代](figure/04_evolution_plain_language.md) · [Index 管线拆解](figure/05_index_pipeline.md) | 先理解每代解决什么，再理解数据怎么处理 |
 | [系统流程比较](COMPARISON.md) | 把各家的高低层接口、记忆和动作执行放在一起看 |
 | [机制路线](MECHANISMS.md) | flow、数据质量、π0.6家族、世界模型，再按需补FAST/KI/RTC |
 

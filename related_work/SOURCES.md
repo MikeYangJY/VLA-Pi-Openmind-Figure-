@@ -4,12 +4,14 @@
 [首页](../README.md) · [资料入口](README.md) · [按问题查找](FIND_BY_QUESTION.md)
 <!-- reading-nav-end -->
 
-原资料核对日期：2026-09-18；本次专题补充日期：2026-09-19。共 **20 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 5 篇提供原始链接）**，另登记 **18 项官方网页、模型卡、代码或数据入口**。
+原资料核对日期：2026-09-18；本次专题补充日期：2026-09-20。共 **20 篇论文（15 篇附 PDF：用户提供 9 篇、补充归档 6 篇；另外 5 篇提供原始链接）**，下表另登记 **21 项官方网页、模型卡、代码或数据入口**。
 
 用户提供 PDF 保留原字节内容。上游 arXiv 可能更新版本；本库的准确存档由 [sources.json](sources.json) 中的 SHA-256、字节数与页数确定。文件名仅用于检索，不能推断它必然是上游最新修订。
 
 ## 专题证据入口
 
+- [Figure 每代变化](figure/04_evolution_plain_language.md) · [Index 管线正文与官方图示](figure/05_index_pipeline.md)：逐项区分官方披露、教学解释与未知细节。
+- [工业 / 家庭任务清单](SCENARIOS_BY_MODEL.md)：每行链接官方发布或本地论文页码，硬件型号与模型版本分别归属。
 - [八模型对照表的原文定位](MODEL_COMPARISON_8.md#4-数字与原文定位)：各数字对应论文章节/图号或官方技术页。
 - [数据质量专题](pi/11_data_quality_three_concepts.md)：另在正文直接链接ROS状态/约束接口、相机标定和固定openpi代码，作为概念解释参考；不将其列为新增VLA论文。
 
@@ -51,9 +53,12 @@ Figure 本次检索到的关键技术材料主要为官方网页。本库保存�
 | Introducing Helix 02: Full-Body Autonomy | 2026-01-27 | [官方来源](https://www.figure.ai/news/helix-02) | [笔记](figure/02_helix02.md) |
 | Helix 2.5: Zero-Shot 30-Home Generalization | 2026-09-17 | [官方来源](https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization) | [笔记](figure/03_data_and_helix25.md) |
 | Project Go-Big: Internet-Scale Humanoid Pretraining and Direct Human-to-Robot Transfer | 2025-09-18 | [官方来源](https://www.figure.ai/news/project-go-big) | [笔记](figure/03_data_and_helix25.md) |
-| Introducing Index: Building The World’s Largest and Most Diverse Physical Dataset | 2026-08-25 | [官方来源](https://www.figure.ai/news/introducing-index) | [笔记](figure/03_data_and_helix25.md) |
-| Scaling Helix: a New State of the Art in Humanoid Logistics | 2025-06-07 | [官方来源](https://www.figure.ai/news/scaling-helix-logistics) | [笔记](figure/03_data_and_helix25.md) |
+| Introducing Index: Building The World’s Largest and Most Diverse Physical Dataset | 2026-08-25 | [官方来源](https://www.figure.ai/news/introducing-index) | [五步管线与图示核对](figure/05_index_pipeline.md) |
+| Index App | 持续更新；2026-09-20 核查 | [官方入口](https://www.figure.ai/index-app) | [数据采集边界](figure/05_index_pipeline.md) |
+| Scaling Helix: a New State of the Art in Humanoid Logistics | 2025-06-07 | [官方来源](https://www.figure.ai/news/scaling-helix-logistics) | [迭代说明](figure/04_evolution_plain_language.md) |
 | Helix 02 Bedroom Tidy | 2026-05-08 | [官方来源](https://www.figure.ai/news/helix-02-bedroom-tidy) | [笔记](figure/03_data_and_helix25.md) |
+| Figure 02 production at BMW | 2025-11-19 | [官方部署报告](https://www.figure.ai/news/production-at-bmw) | [硬件与模型归属](SCENARIOS_BY_MODEL.md#figure-industry) |
+| Figure 03 at BMW，Helix 02 | 2026-06-30 | [官方现场演示](https://www.figure.ai/news/f-03-at-bmw) | [工业任务分类](SCENARIOS_BY_MODEL.md#figure-industry) |
 | Gemini Robotics On-Device brings AI to local robotic devices | 2025-06-24 | [官方来源](https://deepmind.google/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) | [笔记](deepmind/03_updates.md) |
 | Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning | 2026-04-14 | [官方来源](https://deepmind.google/blog/gemini-robotics-er-1-6/) | [笔记](deepmind/03_updates.md) |
 | Gemini Robotics 1.5 model information | 持续更新 | [官方来源](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/) | [笔记](deepmind/03_updates.md) |

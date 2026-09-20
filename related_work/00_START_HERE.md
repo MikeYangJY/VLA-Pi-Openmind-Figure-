@@ -272,6 +272,8 @@ ER的数据侧重教模型“物体在哪、发生了什么、该安排什么”
 <a id="figure"></a>
 ## 6. Figure：先分清S2、S1、S0，再看Index
 
+本节先建立基本概念。想按时间串起来，接着读[每代变化的白话说明](figure/04_evolution_plain_language.md)；想知道视频具体怎样变成训练资料，再看[Index 管线与例子](figure/05_index_pipeline.md)。
+
 ### 6.1 三个S在做什么？
 
 | 模块 | 一句话 | 杯子例子 |

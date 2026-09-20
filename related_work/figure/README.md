@@ -2,13 +2,24 @@
 
 **适合你现在开始的公司路线。** 先理解Helix怎样分工，再看Helix 02为什么需要全身控制，最后读Index与Helix 2.5。原始Helix用于解释架构来源，八模型横向表中的Figure版本是Helix 02、2.5。
 
+## 先用大白话读懂，再查场景
+
+1. [每一代到底变了什么](04_evolution_plain_language.md)：听懂并动手 → 做得更连续 → 手脚配合 → 换个家也能做；物流更新、Go-Big、Index 单独标明。
+2. [Index 官方数据管线](05_index_pipeline.md)：从视频提交到训练片段，逐步解释五个处理环节，补充官网图中的轨迹与 App 反馈。
+3. [Figure 工业任务](../SCENARIOS_BY_MODEL.md#figure-industry) / [Figure 家庭任务](../SCENARIOS_BY_MODEL.md#figure-home)：按版本查做过什么，以及证据来自哪里。
+
+| 分类入口 | 可以查到的任务类型 |
+|---|---|
+| [工业](../SCENARIOS_BY_MODEL.md#figure-industry) | 物流包裹、工厂供料、小件分拣；历史 BMW 部署单独注明模型归属 |
+| [家庭](../SCENARIOS_BY_MODEL.md#figure-home) | 食品收纳、导航、洗碗机操作、卧室整理、客厅收纳、叠毛巾和铺床 |
+
 ## 按这个顺序读
 
 | 顺序 | 先读：简洁笔记 | 想弄懂时展开 | 本轮只回答 |
 |---|---|---|---|
 | 1 | [Helix](../quick_notes/11_helix.md) | [S2与S1的分工](01_helix.md) | 语义理解如何变成高速动作？中间传什么？ |
 | 2 | [Helix 02](../quick_notes/12_helix02.md) | [S2→S1→S0](02_helix02.md) | 新增S0负责什么，为什么全身控制不能只看手臂动作？ |
-| 3 | [Index / Go-Big](../quick_notes/14_index.md) | [数据路线](03_data_and_helix25.md) | 人类数据用来学什么，哪些机器人适配仍然需要？ |
+| 3 | [Index / Go-Big](../quick_notes/14_index.md) | [五步管线与例子](05_index_pipeline.md) · [数据路线](03_data_and_helix25.md) | 人类数据怎样处理、用来学什么，哪些机器人适配仍然需要？ |
 | 4 | [Helix 2.5](../quick_notes/13_helix25.md) | [预训练、适配与未见家庭测试](03_data_and_helix25.md) | “未见家庭”与“从未训练的任务”为什么不同？ |
 
 **读法：** 每行先看简洁笔记；能答右栏就进入下一行，卡住再展开。原始官方页面在每篇笔记开头。

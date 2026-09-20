@@ -7,6 +7,9 @@
 | VLA、规划器、动作expert、控制器是什么关系？ | [系统总览](00_OVERVIEW.md) | [系统流程比较](COMPARISON.md) |
 | 八个模型的架构、数据和能力差在哪？ | [核心对照表](MODEL_COMPARISON_8.md) | [完整CSV](data/model_comparison_8.csv) |
 | 我想先学Figure，从哪一代看起？ | [Figure路线](figure/README.md) | Helix → 02 → Index → 2.5 |
+| Figure 每代到底增加什么、解决什么问题？ | [白话迭代说明](figure/04_evolution_plain_language.md) | 模型、机器人身体、数据计划分开理解 |
+| Index 具体怎样清洗、去重和平衡数据？ | [五步管线拆解](figure/05_index_pipeline.md) | 官方图示、叠毛巾例子、数据字段与未披露项 |
+| 三家各模型做过哪些工业、家庭任务？ | [场景任务清单](SCENARIOS_BY_MODEL.md) | 公司 → 模型 → 具体任务 → 证据类型与适配条件 |
 | Helix的S2/S1/S0分别负责什么？ | [Helix 02简洁笔记](quick_notes/12_helix02.md) | [全身控制解释](figure/02_helix02.md) |
 | Index人类数据为什么有用？ | [Index简洁笔记](quick_notes/14_index.md) | [Helix 2.5训练/评估路径](figure/03_data_and_helix25.md) |
 | Gemini的ER与VLA，谁规划、谁输出动作？ | [DeepMind路线](deepmind/README.md) | [Gemini 1.5详解](deepmind/02_gemini_robotics_15.md) |

@@ -2,6 +2,8 @@
 
 Gemini Robotics在本库指 **Google DeepMind**。这一轮重点是模型如何分工、如何跨机器人迁移，以及实验究竟证明了什么。
 
+**先查具体做过什么：** [DeepMind 工业任务](../SCENARIOS_BY_MODEL.md#deepmind-industry) / [DeepMind 家庭任务](../SCENARIOS_BY_MODEL.md#deepmind-home)。工业重点查工具取放、连接、皮带装配、配套与插入；家庭重点查收纳、擦拭、打包和全身取放。独立 VLA 与 ER＋VLA 整系统分开记录。
+
 ## 按这个顺序读
 
 | 顺序 | 先读：简洁笔记 | 想弄懂时展开 | 本轮只回答 |
