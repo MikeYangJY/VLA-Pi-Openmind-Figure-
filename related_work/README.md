@@ -20,13 +20,15 @@
 | 公司 | 阅读入口 | 顺序 |
 |---|---|---|
 | Figure | [Figure](figure/README.md) | Helix → Helix 02 → Index → Helix 2.5 |
-| Google DeepMind | [DeepMind](deepmind/README.md) | Gemini Robotics → 1.5 → 2系列 |
+| Google DeepMind | [DeepMind：从零到专家交流](deepmind/README.md) | 基础分工 → 技术演进 → 三代模型 → ER代码 → 数据／ICL／世界模型 → 专家问题 |
 | Physical Intelligence | [PI](pi/README.md) | 回查π0/π0.5 → FAST/KI → π0.6家族 → π0.7 |
 
 [18篇简洁笔记](quick_notes/README.md)是速读入口；[原始论文与官方资料](SOURCES.md)用于核对，不要求把PDF按目录全部重读。
 
 ## 代码与访谈
 
+- [ER 官方 notebook 中文导读](deepmind/04_er_notebook_walkthrough.md)：逐段看点、框、多视角成功判断、工具编排和视频；区分 API 推理与训练。
+- [DeepMind 专家交流准备](deepmind/07_expert_conversation.md)：客户问题映射、公开答案、待确认项、术语解释与简洁追问。
 - [openpi学习入口](../openpi_study/README.md)：只学π0、π0.5，先跟推理，再看训练与差异。
 - [访谈准备](INTERVIEW_PREP.md)：将公开结论、边界与待专家确认项分开。
 - [数据质量三概念](pi/11_data_quality_three_concepts.md)：运动学检查、多视角成功验证、视觉归一化及相应追问。

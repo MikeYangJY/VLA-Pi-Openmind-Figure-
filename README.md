@@ -33,6 +33,7 @@
 
 ## 带着问题来，直接查
 
+- **想系统学 DeepMind 并能与专家交流：** [从零入门的完整路线](related_work/deepmind/README.md)：技术演进 → 三代模型 → [ER 官方代码导读](related_work/deepmind/04_er_notebook_walkthrough.md) → 训练数据、ICL 与世界模型 → [客户问题与追问](related_work/deepmind/07_expert_conversation.md)，附原文和证据边界。
 - **想听懂 Figure 每代变了什么：** [白话迭代说明](related_work/figure/04_evolution_plain_language.md)，按“遇到什么问题 → 增加什么 → 解决到哪里”阅读。
 - **想弄懂 Index 怎样处理数据：** [官方管线逐步拆解](related_work/figure/05_index_pipeline.md)，用叠毛巾例子解释过滤、反作弊、去重、再平衡与标注。
 - **想查各家具体做过什么：** [工业 / 家庭任务清单](related_work/SCENARIOS_BY_MODEL.md)，逐模型区分具体任务、评测、演示和现场运行。
@@ -56,6 +57,6 @@ openpi_study/             π0 / π0.5代码学习
   file_notes/            每个文件的说明，通过FILE_INDEX查找
 ```
 
-本库区分**论文报告、官方披露、学习解释、未披露项**。入门更新日期：2026-09-20；技术事实以各篇注明的资料版本为准。仓库名保留Openmind，本文的Gemini Robotics均指 **Google DeepMind**。
+本库区分**论文报告、官方披露、访谈观点、学习解释、未披露项**。全库入门更新日期：2026-09-20；DeepMind 学习模块更新：2026-09-24。技术事实以各篇注明的资料版本为准。仓库名保留Openmind，本文的Gemini Robotics均指 **Google DeepMind**。
 
 [资料索引](related_work/README.md) · [更新记录](related_work/CHANGELOG.md)

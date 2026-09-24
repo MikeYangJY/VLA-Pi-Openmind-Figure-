@@ -28,7 +28,7 @@
 ## 公司入口
 
 - [③-A Figure：先架构，再数据，最后泛化](figure/README.md)
-- [③-B DeepMind：先分清ER与VLA，再看版本变化](deepmind/README.md)
+- [DeepMind：从零看懂机器人，到能与专家讨论](deepmind/README.md)
 - [③-C PI：以π0为基准，按“改变了什么”阅读](pi/README.md)
 
 ## Figure详细笔记
@@ -41,9 +41,17 @@
 
 ## DeepMind详细笔记
 
-- [Gemini Robotics：先区分 ER 与 VLA](deepmind/01_gemini_robotics.md)
+- [从收杯子理解 ER、VLA 与控制系统](deepmind/00_beginner_map.md)
+- [技术演进：SayCan、RT-1、PaLM-E、RT-2／RT-X](deepmind/00_technical_lineage.md)
+- [Gemini Robotics 初代：ER、ICL 与动作架构](deepmind/01_gemini_robotics.md)
 - [Gemini Robotics 1.5：编排器、Thinking VLA 与跨本体迁移](deepmind/02_gemini_robotics_15.md)
-- [DeepMind 补充更新：部署、ER 1.6 与 GR 2](deepmind/03_updates.md)
+- [Gemini Robotics 2、ER 与本地部署分支](deepmind/03_updates.md)
+- [ER 官方 notebook 逐段中文导读](deepmind/04_er_notebook_walkthrough.md)
+- [训练与数据：每种数据教什么](deepmind/05_training_and_data.md)
+- [ICL、世界模型与评测口径](deepmind/06_icl_world_models_and_evaluation.md)
+- [专家沟通：客户问题、公开答案与追问](deepmind/07_expert_conversation.md)
+- [DeepMind 论文、文章、代码与模型卡索引](deepmind/08_sources.md)
+- [公开访谈：观点与论文证据分开](deepmind/09_public_interviews.md)
 
 ## PI详细笔记与专题
 

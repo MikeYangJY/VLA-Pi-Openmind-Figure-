@@ -1,39 +1,60 @@
-# DeepMind 补充更新：部署、ER 1.6 与 GR 2
+# Gemini Robotics 2：全身动作、ER 协调与本地部署
 
-<!-- reading-nav-start -->
-[首页](../../README.md) · [DeepMind入口](README.md) · [按问题查找](../FIND_BY_QUESTION.md)
-<!-- reading-nav-end -->
+[学习入口](README.md) · [前一篇：1.5](02_gemini_robotics_15.md) · [下一篇：ER 代码](04_er_notebook_walkthrough.md)
 
-核对日期：2026-09-18。这里记录与主线直接相关的官方更新，不作为穷尽所有机器人研究的目录。
+核对日期：**2026-09-24**。本页主要依据官方发布、模型页和模型卡；不要把产品披露当成公开了完整训练算法的论文。
 
-## Gemini Robotics On-Device（2025-06-24）
+## 1. 这一代想解决什么？
 
-[官方发布](https://deepmind.google/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) · [Gemini Robotics 报告](https://arxiv.org/abs/2503.20020)。
+从桌面双臂操作进一步走向 **全身移动与操作、更复杂的手部动作、多机器人协调及易部署的模型**。阅读时仍要拆成三个对象。[2026-07-30 官方发布](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/)
 
-官方披露的目标是本地运行、降低网络依赖，并通过少量示范适配任务。其发布说明列出 SDK 与 trusted tester 访问方式。它与旗舰 Gemini Robotics、ER 模型属于不同部署/功能定位，不能将名称中的 On-Device 理解为所有 Gemini 机器人能力已开放下载。
+| 模型 | 白话职责 | 主要变化 | 官方列出的访问定位 |
+|---|---|---|---|
+| [Gemini Robotics 2](https://deepmind.google/models/gemini-robotics/vla/) | 根据观察与指令产生动作 | 全身控制、更复杂灵巧操作 | Private preview |
+| [Gemini Robotics ER 2](https://deepmind.google/models/gemini-robotics/embodied-reasoning/) | 理解现场、规划、工具调用与协调 | 时序／进度理解、多机器人任务组织 | AI Studio／Gemini API public preview；企业平台另有 private preview |
+| [Gemini Robotics On-Device 2](https://deepmind.google/models/gemini-robotics/on-device/) | 本地运行的动作 VLA | 减少网络依赖，快速适配新身体 | Trusted testers |
 
-**Workflow：** 本地观测与指令 → 本地动作策略 → 执行与反馈；任务适配另外经过数据收集与微调。研究重点是延迟、断网鲁棒性和任务适配效率。设备端模型大小、目标硬件、可获取权重必须以实际访问文档为准，不能按博客演示推定适合任意消费级电脑。
+**它们不是必须按 ER 2 → GR 2 → On-Device 2 串起来的三个步骤。** 两个动作模型有不同部署定位；ER 可以组织调用动作模型或其他已有工具。能调用 ER API，不等于拿到了完整 VLA 权重。
 
-## Gemini Robotics-ER 1.6（2026-04-14）
+## 2. 方法与数据：知道到哪里？
 
-[官方发布](https://deepmind.google/blog/gemini-robotics-er-1-6/)。
+- **动作侧：** 官方展示全身动作与操作配合，但没有完整开放所有控制层级、动作表示、损失函数和数据混合。
+- **ER 侧：** 模型卡明确基于 **Gemini 3.5 Flash**，加具身推理任务数据；不要根据评测对照模型名称反推它的基座版本。[ER 2 模型卡](https://deepmind.google/models/model-cards/gemini-robotics-er-2/)
+- **本地适配：** On-Device 2 官方称可用少于 200 个例子、几小时训练适配新身体。这是已有基座后的适配，**不是从零训练数据总量，也不是“不更新参数的 ICL”**。[官方模型页](https://deepmind.google/models/gemini-robotics/on-device/)
 
-官方将其定位为高层具身推理升级，强调空间理解、多视角、指点/计数、成功检测与仪表读数，并说明可通过 Gemini API 和 AI Studio 访问。它可以调用 VLA 或用户定义的工具；这不代表它本身替代高频动作控制器，也不应把 ER 1.6 写成已发布同名 “Gemini Robotics VLA 1.6”。
+用什么数据分别教语义、动作和结果判断，见[训练专题](05_training_and_data.md)。
 
-**研究连接：** 若你关心 Gemini 1.5 的 agent 架构，最值得追踪的是高层结束检测能否可靠判断“已经完成”，以及工具返回信息如何进入下一步计划。官方特别说明部分仪表读取评估启用 agentic vision，而其他评估设置不同；不同设置数字不能直接横比。
+## 3. 公开评测告诉了什么？
 
-## Gemini Robotics 2（2026-07-30）
+下面只摘取帮助理解口径的例子，不能汇总成一个“公司总成功率”。
 
-[官方发布](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) · [简洁调研笔记](../quick_notes/10_gemini2.md)。
+| 对象／平台 | 官方页面指标例子 | 怎样解释 |
+|---|---|---|
+| GR 2；Apollo + Inspire hands | 桌上拿取 68.4%，地面拿取 45.7%，架上拿取 76.3% | 不同任务难度仍有差异；这是指定平台和测试项的 accuracy，不能代表全天候家务可靠性 |
+| ER 2；ERQA | 78.5% | 具身视觉问答准确率，不是机器人抓取成功率 |
+| ER 2；success detection，image | 87.7% | 对图像中的任务成功状态做判断的准确率，不是动作完成率 |
 
-该系列包含高层推理与协调的 ER 2、动作模型 GR 2，以及本地适配的 On-Device 2。学习时沿着「高层计划 → 动作生成 → 平台执行」分别定位，不把不同模型的实验或访问方式合并。新本体少样本适配也应与新本体零样本迁移区分。
+来源：[GR 2 模型页评测图](https://deepmind.google/models/gemini-robotics/vla/) · [ER 2 模型页评测图](https://deepmind.google/models/gemini-robotics/embodied-reasoning/)。独立复现实验、长期连续运行和不同客户工位的统计不能从这些数字自动推出。
 
-## 访问状态的边界
+具体工业／家庭任务仍从[场景清单](../SCENARIOS_BY_MODEL.md)查；本页不把演示升级成客户生产部署证据。
 
-旗舰动作模型的合作伙伴访问与 ER 的开发者访问是不同权限。应以 [模型页面](https://deepmind.google/en/models/gemini-robotics/gemini-robotics/) 和对应版本发布页为准；能够访问 ER 不等于原 VLA 权重、训练数据或完整机器人系统开放。
+## 4. 两个旁支，放回正确位置
 
-这些是文档核查结果；本库未申请 tester、调用付费 API 或验证账号实际可用权限。
+| 更新 | 为什么要单列 | 原文 |
+|---|---|---|
+| On-Device，2025-06-24 | 在 2 之前就已有本地动作模型方向；不是 ER 的别名 | [官方发布](https://deepmind.google/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/) |
+| ER 1.6，2026-04-14 | 高层具身推理更新，包含空间／多视角、成功检测与仪表理解；不代表同名动作 VLA 已发布 | [官方发布](https://deepmind.google/blog/gemini-robotics-er-1-6/) |
 
-<!-- reading-footer-start -->
-[前一篇：Gemini Robotics 1.5](02_gemini_robotics_15.md) · [接着读：PI](../pi/README.md) · [返回DeepMind入口](README.md)
-<!-- reading-footer-end -->
+版本号相近，不等于功能层级相同。你给的 notebook 当前已经使用 **ER 2**，详细解释在[代码导读](04_er_notebook_walkthrough.md)。
+
+## 5. 合作与商业落地：什么已知，什么还需要问？
+
+官方家族页面提供模型接入、合作伙伴与开发者生态入口。对新公司而言，可以分别研究 **ER API 接入、动作模型合作／测试、硬件适配、部署与评测支持**。[官方入口](https://deepmind.google/models/gemini-robotics/)
+
+页面列出 Agile Robots、Apptronik、Boston Dynamics 等研究合作伙伴、100 多家 trusted testers，以及支持早期 physical AI 公司的 Google DeepMind Accelerator。这说明已有多种合作入口；**tester 数不是付费量产客户数**，也不能据此认定各家获得相同模型和交付支持。[官方合作与生态栏目](https://deepmind.google/models/gemini-robotics/)
+
+尚不能仅凭这些页面回答：谁承担每个客户的数据采集成本、定制与通用交付各占多少、收费和验收方式、失败由谁兜底。访谈应请对方用一个可分享的案例走完“接入 → 适配 → 验收 → 运行反馈”，见[客户问题映射](07_expert_conversation.md)。
+
+API 功能还应核对具体端点：普通 ER 2 与 streaming 端点的支持项并不完全相同，不要把模型家族页面的能力都抄成某个端点可用。[当前开发文档](https://ai.google.dev/gemini-api/docs/robotics-overview)
+
+[下一篇：实际代码怎样调用 ER](04_er_notebook_walkthrough.md) · [原文索引](08_sources.md)

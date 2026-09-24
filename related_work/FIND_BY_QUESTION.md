@@ -13,6 +13,11 @@
 | Helix的S2/S1/S0分别负责什么？ | [Helix 02简洁笔记](quick_notes/12_helix02.md) | [全身控制解释](figure/02_helix02.md) |
 | Index人类数据为什么有用？ | [Index简洁笔记](quick_notes/14_index.md) | [Helix 2.5训练/评估路径](figure/03_data_and_helix25.md) |
 | Gemini的ER与VLA，谁规划、谁输出动作？ | [DeepMind路线](deepmind/README.md) | [Gemini 1.5详解](deepmind/02_gemini_robotics_15.md) |
+| SayCan、RT-1、PaLM-E、RT-2 与 Gemini 是什么关系？ | [DeepMind 技术演进](deepmind/00_technical_lineage.md) | 每一步的问题、方法、数据与边界 |
+| ER coding 怎么看？Bounding box 怎样变成坐标？ | [ER notebook 逐段导读](deepmind/04_er_notebook_walkthrough.md) | 手算坐标、mock 工具、成功判断与视频进度 |
+| Gemini 怎样训练，RT-X 数据够不够？ | [训练与数据](deepmind/05_training_and_data.md) | 动作标签、跨本体差异、MT 和未披露配方 |
+| Gemini 的 ICL、微调、Genie 世界模型有何区别？ | [机制与实验口径](deepmind/06_icl_world_models_and_evaluation.md) | ICL 原表、参数更新、world model 用途、success 与 progress |
+| 怎样准备与 Google DeepMind 专家沟通？ | [客户问题→已知→追问](deepmind/07_expert_conversation.md) | 一小时路线、术语速查与访谈前自测 |
 | π0.6、π0.6*、MEM是不是三个依次升级的版本？ | [家族区别](pi/09_pi06_family.md) | [RECAP](pi/05_recap.md) · [MEM](pi/06_mem.md) |
 | flow matching是什么，需要哪些动作数据？ | [零基础教程](../openpi_study/07_FLOW_MATCHING_FROM_ZERO.md) | [π0代码讲解](../openpi_study/03_PI0_WALKTHROUGH.md) |
 | π0.7世界模型和动作expert训练有什么不同？ | [两种生成目标对照](pi/10_pi07_world_model_vs_action_expert.md) | [π0.7整体结构](pi/07_pi07.md) |

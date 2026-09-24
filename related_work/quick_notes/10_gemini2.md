@@ -20,7 +20,7 @@
 
 官方给出全身、夹爪和多指任务结果；同一GR 2 checkpoint用于三种硬件配置。多指操作仍有明显困难。On-Device 2报告新双臂本体通常用少于200个示范适配；这是有数据适配，不是新本体zero-shot。
 
-**必须保留的边界：** 发布材料未给完整训练配方，也未证明与Genie已形成机器人控制训练闭环。
+**必须保留的边界：** 发布材料未给完整训练配方，也未证明与Genie已形成机器人控制训练闭环。[ICL 与世界模型边界](../deepmind/06_icl_world_models_and_evaluation.md) · [当前 ER 2 notebook 导读](../deepmind/04_er_notebook_walkthrough.md)。
 
 <!-- reading-footer-start -->
 [前一篇：Gemini Robotics 1.5](09_gemini15.md) · [接着读：PI](../pi/README.md) · [返回DeepMind入口](../deepmind/README.md)

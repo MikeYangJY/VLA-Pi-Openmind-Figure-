@@ -17,7 +17,7 @@
 
 1. 先读[零基础入门](00_START_HERE.md)，理解Transformer、动作模块与训练方法，并回答末尾五个问题，再扫[系统图](00_OVERVIEW.md)。[八模型表](MODEL_COMPARISON_8.md)留到需要查具体数字时。
 2. 进入[Figure路线](figure/README.md)：Helix → Helix 02 → Index → Helix 2.5。先理解架构，再理解为什么扩展数据。
-3. 带着同样问题读[DeepMind路线](deepmind/README.md)：谁规划、谁生成动作、跨机器人迁移怎么证明。
+3. 带着同样问题读[DeepMind路线](deepmind/README.md)：基础分工 → SayCan／RT 系列 → Gemini 三代 → [ER notebook](deepmind/04_er_notebook_walkthrough.md) → 数据、ICL 与世界模型 → [专家交流](deepmind/07_expert_conversation.md)。每一步都问谁负责、怎么训练、证据是什么。
 4. 回[PI路线](pi/README.md)补KI、RECAP、MEM及世界模型；已熟悉的π0/π0.5/π0.7只需回查。
 5. 进入[机制路线](MECHANISMS.md)，先算懂flow，再读代码。
 
